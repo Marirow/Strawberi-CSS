@@ -58,24 +58,24 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 - Makes it easier to open many Treasure Boxes at a time.
 - Simplifies opening each Treasure Box category.
 - Does not affect BoxBoxes, BoxBoxBoxes, Gragon's Hoards, or Gragon's Gifts (for convenience).
-- With the Dialog Module, simplifies viewing the contents of each Box
+- With the Dialog Module, simplifies viewing the contents of each Box.
 
 ### 🍓 Evolution Module
-- (REQUIRES the QOL script's "easy evolve" function to be active)
+- (REQUIRES the QOL script's "easy evolve" function to be active).
 - Allows the user to "easy evolve" PKMN in the Farm News screen without moving the mouse.
-- Makes it easier to evolve many PKMN at once
-- Simplifies clicking on each individual evolution link in the list
-- With the Dialog Module, simplifies approving each evolution
+- Makes it easier to evolve many PKMN at once.
+- Simplifies clicking on each individual evolution link in the list.
+- With the Dialog Module, simplifies approving each evolution.
 
 ### 🍓 Trade Module
 - Allows the user to accept trades without moving the mouse.
-- Makes it easier to accept many trades in a row
-- Simplifies selecting the "view trade" link and accepting the trade
-- Does not affect the Collection Area
+- Makes it easier to accept many trades in a row.
+- Simplifies selecting the "view trade" link and accepting the trade.
+- Does not affect the Collection Area.
 - With the Dialog Module, simplifies sending the accepted PKMN to a field
 
 ### 🍓 Lab Module
 - Allows the user to refresh the Lab's Egg selection without moving the mouse.
-- Makes it easier to refresh many times in a row
-- Simplifies selecting the Reload/Reload Now button
+- Makes it easier to refresh many times in a row.
+- Simplifies selecting the Reload/Reload Now button.
 - With the Dialog Module, simplifies spending Lab Reloaders
