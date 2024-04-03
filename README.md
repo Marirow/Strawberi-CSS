@@ -1,7 +1,7 @@
 # 🍓 PFQ-Strawberi
-A series of CSS stylesheets for Pokefarm Q, an accessibility layout for accessing key site functions with the click of a single 🍓 Button.
+A series of accessibility stylesheets for Pokefarm Q, accessing key site functions with the click of a single 🍓 Button.
 
-**Strawberi does not automatically perform actions.** To comply with PFQ TOS (and the limitations of CSS), the 🍓 Button reorganizes inputs on the screen using the ::before pseudo-element. Because the ::before element exists separately from the original inputs, it can be affixed to the bottom of the screen without breaking the rest of the site. To reiterate: Clicking on the 🍓 Button performs the same input as clicking normally. It does not and cannot perform inputs on its own. 
+**Strawberi does not automatically perform actions.** To comply with PFQ TOS (and CSS limitations), the 🍓 Button reorganizes inputs on the screen using the ::before pseudo-element. It does not and cannot perform inputs on its own. 
 
 *Compatible with PFQ as of 4/2/24. QOL script recommended.*
 
@@ -61,8 +61,7 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 - With the Dialog Module, simplifies viewing the contents of each Box
 
 ### 🍓 Evolution Module
-(REQUIRES the QOL script's "easy evolve" function to be active)
-
+- (REQUIRES the QOL script's "easy evolve" function to be active)
 - Allows the user to "easy evolve" PKMN in the Farm News screen without moving the mouse.
 - Makes it easier to evolve many PKMN at once
 - Simplifies clicking on each individual evolution link in the list
