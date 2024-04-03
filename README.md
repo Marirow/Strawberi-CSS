@@ -3,7 +3,7 @@ A series of CSS stylesheets for Pokefarm Q, an accessibility layout for accessin
 
 **Strawberi does not automatically perform actions.** To comply with PFQ TOS (and the limitations of CSS), the Strawberi Button reorganizes inputs on the screen using the ::before pseudo-element. Because the ::before element exists separately from the original inputs, it can be affixed to the bottom of the screen without breaking the rest of the site. To reiterate: Clicking on the Strawberi Button performs the same input as clicking normally. It does not and cannot perform inputs on its own. 
 
-![image](https://github.com/Marirow/PFQ-Strawberi/assets/110361976/e6d244d5-b0dd-4333-942a-a3ff3e401356)
+![image](https://github.com/Marirow/PFQ-Strawberi/assets/110361976/b36d9b31-56ff-4011-923a-4cacefea36f6)
 
 *Compatible with PFQ as of 4/2/24. QOL script recommended.*
 
