@@ -15,10 +15,12 @@ A series of CSS stylesheets for Pokefarm Q, an accessibility layout for accessin
 3. **OR** use my personal skin by pasting **JPM4/strawberi** into the "Other Skin" path and click "Use this Skin."
 
 ## 🍓 Complete-Strawberi.css
-- Contains every Strawberi module in a single package. Recommended to inject as-is.
-- Individual modules can be disabled by removing the labeled CSS; removing the Core Module (should) prevent all other modules from operating.
+Contains every Strawberi module in a single package. Recommended to inject as-is.
+
+Individual modules, listed below, can be disabled by removing the labeled CSS.
 
 ### 🍓 Core Module
+- Required.
 - Creates the 🍓 Button(s), allowing the other modules to use them.
 - The 🍓 Button sits at the bottom of the screen, taking up one tenth of the viewport.
 - Clicking on it presses whatever link or input that the Button is tied to.
@@ -73,7 +75,7 @@ A series of CSS stylesheets for Pokefarm Q, an accessibility layout for accessin
 - Does not affect the Collection Area
 - With the Dialog Module, simplifies sending the accepted PKMN to a field
 
-### Lab Module
+### 🍓 Lab Module
 - Allows the user to refresh the Lab's Egg selection without moving the mouse.
 - Makes it easier to refresh many times in a row
 - Simplifies selecting the Reload/Reload Now button
