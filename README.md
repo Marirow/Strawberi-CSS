@@ -1,5 +1,5 @@
 # 🍓 PFQ-Strawberi
-A series of accessibility stylesheets for Pokefarm Q, accessing key site functions with the click of a single 🍓 Button.
+A series of accessibility stylesheets for Pokéfarm Q, accessing key site functions with the click of a single 🍓 Button.
 
 **Strawberi does not automatically perform actions.** To comply with PFQ TOS (and CSS limitations), the 🍓 Button reorganizes inputs on the screen using the ::before pseudo-element. It does not and cannot perform inputs on its own. 
 
@@ -12,7 +12,7 @@ A series of accessibility stylesheets for Pokefarm Q, accessing key site functio
 ## 🍓 Instructions
 1. Access the Site Skins page at https://pokefarm.com/skin.
 2. Paste the contents of the release file(s) into the "Extra CSS" section of the Skin Editor.
-3. **OR** use my personal skin by pasting **JPM4/strawberi** into the "Other Skin" path and click "Use this Skin."
+3. **OR** use the integrated site skin by pasting **JPM4/strawberi** into the "Other Skin" path.
 
 ## 🍓 Complete-Strawberi.css
 Contains every Strawberi module in a single package. Recommended to inject as-is.
@@ -22,11 +22,10 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 ### 🍓 Core Module
 - Required.
 - Creates the 🍓 Button(s), allowing the other modules to use them.
-- The 🍓 Button sits at the bottom of the screen, taking up one tenth of the viewport.
-- Clicking on it presses whatever link or input that the Button is tied to.
+- Can be modified to change the style, size, and position of the 🍓 Button.
 
 ### 🍓 Dialog Module
-- Allows the user to close "dialog" prompts without moving the mouse, akin to hitting Enter on the keyboard interface.
+- Allows the user to quickly close "dialog" prompts, like pressing Enter on the keyboard.
 - Makes the other modules faster and easier to use.
 - Only affects "yes" prompts, not "cancel" prompts.
 
