@@ -80,17 +80,16 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 - With the Dialog Module, simplifies spending Lab Reloaders
 
 ### 🍓 Wishforge Module
-(In Development)
 - Allows the user to upgrade and collected badges without moving the mouse.
 - Makes it easier to work through a lot of badges at a time.
 - Simplifies scrolling up and down to check each badge's progress.
 - With the Dialog Module, simplifies approving badge crafting.
 
 ### 🍓Shelter Module
-(In Development)
 - Allows the user to refresh the Shelter and view PKMN summaries without moving the mouse.
 - Makes it easier to refresh many times in a row.
 - Simplifies selecting "View/Adopt" over and over.
+- With the Dialog Module, adopt a PKMN immediately after viewing it.
 
 ## Q&A
 
