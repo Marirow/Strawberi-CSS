@@ -151,6 +151,10 @@ button.br[data-upgrade]:not([disabled])::before {
 
 
 /*🍓 Strawberi SHELTER Module*/
+/*QOL script compatibility*/
+.qoltooltipgrid {
+	transform: none!important;
+}
 /*Use only ONE of the following buttons to reload:*/
 button[data-shelter='reload']:not([disabled])::before {
 /*button[data-shelter='whiteflute']:not([disabled])::before {*/
