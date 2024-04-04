@@ -25,7 +25,9 @@ button[data-battleact='ball-597']::before,
 .tradelist>li>a.view::before, /*TRADE*/
 button.big[data-action='acceptgift']::before,
 button#eggreload::before, /*LAB*/
-#orusereloader>span>button::before {
+#orusereloader>span>button::before,
+button.br[data-collect]:not([disabled])::before, /*FORGE*/
+button.br[data-upgrade]:not([disabled])::before {
 	position: fixed; height: 10vh; width: auto; left: 0; bottom: 0; right: 0;
 	font: normal normal normal 9vh/10vh "Trebuchet MS", sans-serif; 
 	text-align: center; font-decoration: none; 
@@ -137,3 +139,11 @@ button.big[data-action='acceptgift']::before {content: '🤝';}
 /*🍓 Strawberi LAB Module*/
 button#eggreload:enabled::before {content: '🔄';}
 #orusereloader>span>button:not([disabled])::before {content: '⏭️';}
+
+
+/*🍓 Strawberi FORGE Module*/
+button.br[data-collect]:not([disabled])::before {content: '🍓';}
+button.br[data-upgrade]:not([disabled])::before {
+	content: '🍓';
+	z-index: 1!important; /*must load below all of the other button instances*/
+}
