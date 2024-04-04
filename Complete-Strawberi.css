@@ -27,7 +27,8 @@ button.big[data-action='acceptgift']::before,
 button#eggreload::before, /*LAB*/
 #orusereloader>span>button::before {
 	position: fixed; height: 10vh; width: auto; left: 0; bottom: 0; right: 0;
-	line-height: 10vh; font-size: 9vh; text-align: center; font-weight: normal;
+	font: normal normal normal 9vh/10vh "Trebuchet MS", sans-serif; 
+	text-align: center; font-decoration: none; 
 	background: radial-gradient(circle, rgba(226,255,205,1) 20%, rgba(185,242,160,1) 100%);
 	border: 2px solid #ff7d7d;
 	border-radius: 10px 10px 0px 0px; 
@@ -67,8 +68,8 @@ button[data-action='next']:not([disabled])::before,
 #content:has(a.selected[data-berry='rawst']) .fieldmon.cormyr:not(.nothungry)::before {
 	content: '🍓';
 }
-#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]):has([data-action='jump'][disabled]) [href='/user/~clickback']::before,
-#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]):has(.fieldmon:not(.nothungry)) [href='/user/~clickback']::before,
+#field_field:has([data-action='next'][disabled]):has([data-action='jump'][disabled]) [href='/user/~clickback']::before,
+#field_field:has([data-action='next'][disabled]):has(.fieldmon:not(.nothungry)) [href='/user/~clickback']::before,
 #content:has(#field_field[data-mode='private']) button[data-action='next']::before,
 #content:has(.fieldmon:not(.nothungry)) button[data-action='next']::before,
 #content:has(.fieldmon.cormyr:not(.nothungry)) a[data-berry]::before {
