@@ -9,10 +9,10 @@ body>.dialog>div>div>div>div>button::before, /*DIALOG*/
 #field_nav button[data-action='next']::before,
 #field_berries a[data-berry]::before,
 .fieldmon.cormyr::before,
-.showcase>div>.action>.berrybuttons>a[data-berry]::before, /*PARTY*/
-.party>div>.action>.berrybuttons>a[data-berry]::before,
-.party>div>.action>table>tbody>tr>td>button::before,
-.party>div>.action>a::before,
+.action>.berrybuttons>a[data-berry]::before, /*PARTY*/
+.action>.berrybuttons>a[data-berry]::before,
+.action>table>tbody>tr>td>button::before,
+.action>a::before,
 .mu_navlink.next::before,
 a[data-fishspot='0']::before, /*FISHING*/
 #fishing>.panel>.center>p>button::before,
@@ -82,18 +82,14 @@ button[data-action='next']:not([disabled])::before,
 	content: '🍓';
 	z-index: 1!important; /*must load below all of the other button instances*/
 }
-.showcase>div>.action>.berrybuttons[data-down='any']>[data-berry='oran']::before,
-.showcase>div>.action>.berrybuttons[data-up='sour']>[data-berry='aspear']::before,
-.showcase>div>.action>.berrybuttons[data-up='spicy']>[data-berry='cheri']::before,
-.showcase>div>.action>.berrybuttons[data-up='dry']>[data-berry='chesto']::before,
-.showcase>div>.action>.berrybuttons[data-up='sweet']>[data-berry='pecha']::before,
-.showcase>div>.action>.berrybuttons[data-up='bitter']>[data-berry='rawst']::before,
-.party>div>.action>.berrybuttons[data-up='sour']>[data-berry='aspear']::before,
-.party>div>.action>.berrybuttons[data-up='spicy']>[data-berry='cheri']::before,
-.party>div>.action>.berrybuttons[data-up='dry']>[data-berry='chesto']::before,
-.party>div>.action>.berrybuttons[data-up='sweet']>[data-berry='pecha']::before,
-.party>div>.action>.berrybuttons[data-up='bitter']>[data-berry='rawst']::before,
-.party>div>.action>table>tbody>tr>td>button::before,
+.action>.berrybuttons[data-down='any']>[data-berry='oran']::before,
+.action>.berrybuttons[data-down='any']>[data-berry='aspear']::before,
+.action>.berrybuttons[data-up='sour']>[data-berry='aspear']::before,
+.action>.berrybuttons[data-up='spicy']>[data-berry='cheri']::before,
+.action>.berrybuttons[data-up='dry']>[data-berry='chesto']::before,
+.action>.berrybuttons[data-up='sweet']>[data-berry='pecha']::before,
+.action>.berrybuttons[data-up='bitter']>[data-berry='rawst']::before,
+.action>table>tbody>tr>td>button::before,
 .party>div>.action>a::before {
 	content: '🍓';
 }
