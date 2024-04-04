@@ -7,7 +7,7 @@
 body>.dialog>div>div>div>div>button::before, /*DIALOG*/
 [href='/user/~clickback']::before, /*FIELD*/
 #field_nav button[data-action='next']::before,
-#field_berries a[data-berry]::before,
+#field_berries a[data-flavour]::before,
 .fieldmon.cormyr::before,
 .action>.berrybuttons>a[data-berry]::before, /*PARTY*/
 .action>.berrybuttons>a[data-berry]::before,
@@ -53,27 +53,26 @@ body>.dialog>div>div>div>div>button[data-cancelbutton='1']::before {content: non
 
 
 /*🍓 Strawberi FIELDS Module*/
-#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]) [href='/user/~clickback']::before,
-button[data-action='next']:not([disabled])::before,
-#content:has(.fieldmon[data-flavour^='any']:not(.nothungry)) a[data-berry='aspear']::before,
-#content:has(.fieldmon[data-flavour^='sour']:not(.nothungry)) a[data-berry='aspear']::before,
-#content:has(.fieldmon[data-flavour^='spicy']:not(.nothungry)) a[data-berry='cheri']::before,
-#content:has(.fieldmon[data-flavour^='dry']:not(.nothungry)) a[data-berry='chesto']::before,
-#content:has(.fieldmon[data-flavour^='sweet']:not(.nothungry)) a[data-berry='pecha']::before,
-#content:has(.fieldmon[data-flavour^='bitter']:not(.nothungry)) a[data-berry='rawst']::before,
-#content:has(a.selected[data-berry='aspear']) .fieldmon.cormyr:not(.nothungry)::before,
-#content:has(a.selected[data-berry='cheri']) .fieldmon.cormyr:not(.nothungry)::before,
-#content:has(a.selected[data-berry='chesto']) .fieldmon.cormyr:not(.nothungry)::before,
-#content:has(a.selected[data-berry='pecha']) .fieldmon.cormyr:not(.nothungry)::before,
-#content:has(a.selected[data-berry='rawst']) .fieldmon.cormyr:not(.nothungry)::before {
+#content:has(.fieldmon[data-flavour^='any']:not(.nothungry)) a[data-flavour='sour']::before,
+#content:has(.fieldmon[data-flavour^='sour']:not(.nothungry)) a[data-flavour='sour']::before,
+#content:has(.fieldmon[data-flavour^='spicy']:not(.nothungry)) a[data-flavour='spicy']::before,
+#content:has(.fieldmon[data-flavour^='dry']:not(.nothungry)) a[data-flavour='dry']::before,
+#content:has(.fieldmon[data-flavour^='sweet']:not(.nothungry)) a[data-flavour='sweet']::before,
+#content:has(.fieldmon[data-flavour^='bitter']:not(.nothungry)) a[data-flavour='bitter']::before,
+#content:has(#field_berries.selected) .fieldmon.cormyr:not(.nothungry)::before,
+#content:has(#field_field[data-mode='public']):has([data-action='next'][disabled]) [href='/user/~clickback']::before,
+button[data-action='next']:not([disabled])::before, {
 	content: '🍓';
 }
-#field_field:has([data-action='next'][disabled]):has([data-action='jump'][disabled]) [href='/user/~clickback']::before,
-#field_field:has([data-action='next'][disabled]):has(.fieldmon:not(.nothungry)) [href='/user/~clickback']::before,
-#content:has(#field_field[data-mode='private']) button[data-action='next']::before,
+#content:has(.fieldmon.cormyr:not(.nothungry)) a[data-flavour]::before,
+#content:has(.fieldmon:not(.nothungry)) [href='/user/~clickback']::before,
 #content:has(.fieldmon:not(.nothungry)) button[data-action='next']::before,
-#content:has(.fieldmon.cormyr:not(.nothungry)) a[data-berry]::before {
+#content:has(#field_field[data-mode='private']) [href='/user/~clickback']::before,
+#content:has(#field_field[data-mode='private']) button[data-action='next']::before {
 	content: none!important;
+}
+#field_berries.selected a {
+	opacity: 1!important;
 }
 
 
