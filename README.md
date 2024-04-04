@@ -1,13 +1,13 @@
-# 🍓 PFQ-Strawberi
-A series of accessibility stylesheets for Pokéfarm Q, accessing key site functions with the click of a single 🍓 Button.
+# 🍓 PFQ-Strawberi: The Pokéfarm Q Accessibility Tool
+(TOS Disclaimer: **PFQ-Strawberi does not and cannot perform inputs on its own.**)
 
-**Strawberi does not automatically perform actions.** To comply with PFQ TOS (and CSS limitations), the 🍓 Button reorganizes inputs on the screen using the ::before pseudo-element. It does not and cannot perform inputs on its own. 
+A series of accessibility stylesheets for Pokéfarm Q, designed around a universal 🍓 Button.
+- Want to click fast? Yes! Feed PKMN, go fishing, accept trades, and more with the click of a single button.
+- Aching hands? No worries! PFQ-Strawberi gives your joints some time to rest by letting you tap and click without moving your wrist.
+- Custom theme? No problem! Styling the Core Module styles the 🍓 Button everywhere, making personalization a breeze.
+- *Compatible with PFQ as of 4/4/24. QOL script recommended. Tested on Firefox.*
 
-*Compatible with PFQ as of 4/2/24. QOL script recommended.*
-
-*Cannot be used for PFNext or any other PokeFarm service.*
-
-*Tested on Firefox.*
+Make farming easier. Install PFQ-Strawberi today.
 
 ## 🍓 Instructions
 1. Access the Site Skins page at https://pokefarm.com/skin.
@@ -78,3 +78,33 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 - Makes it easier to refresh many times in a row.
 - Simplifies selecting the Reload/Reload Now button.
 - With the Dialog Module, simplifies spending Lab Reloaders
+
+### 🍓 Wishforge Module
+(In Development)
+- Allows the user to upgrade and collected badges without moving the mouse.
+- Makes it easier to work through a lot of badges at a time.
+- Simplifies scrolling up and down to check each badge's progress.
+- With the Dialog Module, simplifies approving badge crafting.
+
+### 🍓Shelter Module
+(In Development)
+- Allows the user to refresh the Shelter and view PKMN summaries without moving the mouse.
+- Makes it easier to refresh many times in a row.
+- Simplifies selecting "View/Adopt" over and over.
+
+## Q&A
+
+### Q: How does this compare to [Winterbraid's One Click Fields](https://pfq.link/~Mzx6)?
+A: It's a different implementation.
+- OCF is developed for Chrome, Strawberi is developed for Firefox.
+- OCF is lightweight and standalone, Strawberi works across the site.
+- OCF uses more precise CSS selectors, Strawberi takes up less lines per-module.
+- OCF can be toggled with the QOL script's checkboxes, Strawberi cannot.
+
+Use whichever one works better for you.
+
+### Q: Will there be a Garden Module?
+A: No, due to CSS limitations. For a practical solution, see [Neonyan's Easy Garden Watering](https://pfq.link/~V9yD).
+
+### Q: Are you worried about releasing this while the PFQ code rewrite is going on?
+A: Not really. I trust Niet to do a good job.
