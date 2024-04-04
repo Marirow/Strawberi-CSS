@@ -1,7 +1,7 @@
 /*🍓 Strawberi CORE Module*/
 /*make room on the screen for the 🍓 Buttons*/
 #footbar {display: none!important;}
-#content {margin-bottom: 11vh;}
+#content {padding-bottom: 11vh;}
 .mq15 #content:has(#field_field[data-mode='public']) {margin-bottom: 31vh;}
 /*create the 🍓 Buttons*/
 body>.dialog>div>div>div>div>button::before, /*DIALOG*/
