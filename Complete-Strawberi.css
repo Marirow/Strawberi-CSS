@@ -46,7 +46,7 @@ button#eggreload::before, /*LAB*/
 
 
 /*🍓 Strawberi DIALOG Module*/
-.dialog {margin-bottom: 10vw;}
+.dialog {padding-bottom: 10vh;}
 body>.dialog>div>div>div>div>button:first-of-type::before {content: '🍓';}
 body>.dialog>div>div>div>div>button[data-cancelbutton='1']::before {content: none!important;}
 
