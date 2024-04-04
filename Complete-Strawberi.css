@@ -68,8 +68,8 @@ button[data-action='next']:not([disabled])::before,
 #content:has(a.selected[data-berry='rawst']) .fieldmon.cormyr:not(.nothungry)::before {
 	content: '🍓';
 }
-#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]):has([data-action='jump'][disabled]) [href='/user/~clickback']::before,
-#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]):has(.fieldmon:not(.nothungry)) [href='/user/~clickback']::before,
+#field_field:has([data-action='next'][disabled]):has([data-action='jump'][disabled]) [href='/user/~clickback']::before,
+#field_field:has([data-action='next'][disabled]):has(.fieldmon:not(.nothungry)) [href='/user/~clickback']::before,
 #content:has(#field_field[data-mode='private']) button[data-action='next']::before,
 #content:has(.fieldmon:not(.nothungry)) button[data-action='next']::before,
 #content:has(.fieldmon.cormyr:not(.nothungry)) a[data-berry]::before {
