@@ -27,7 +27,8 @@ button.big[data-action='acceptgift']::before,
 button#eggreload::before, /*LAB*/
 #orusereloader>span>button::before,
 button.br[data-collect]:not([disabled])::before, /*FORGE*/
-button.br[data-upgrade]:not([disabled])::before {
+button.br[data-upgrade]:not([disabled])::before,
+button[data-shelter]:not([disabled])::before { /*SHELTER*/
 	position: fixed; height: 10vh; width: auto; left: 0; bottom: 0; right: 0;
 	font: normal normal normal 9vh/10vh "Trebuchet MS", sans-serif; 
 	text-align: center; font-decoration: none; 
@@ -146,4 +147,17 @@ button.br[data-collect]:not([disabled])::before {content: '🍓';}
 button.br[data-upgrade]:not([disabled])::before {
 	content: '🍓';
 	z-index: 1!important; /*must load below all of the other button instances*/
+}
+
+
+/*🍓 Strawberi SHELTER Module*/
+/*Use only ONE of the following buttons to reload:*/
+button[data-shelter='reload']:not([disabled])::before {
+/*button[data-shelter='whiteflute']:not([disabled])::before {*/
+/*button[data-shelter='blackflute']:not([disabled])::before {*/
+	content: '🔄';
+	z-index: 1!important; /*must load below all of the other button instances*/
+}
+button[data-shelter='adopt']::before {
+	content: '🍓';
 }
