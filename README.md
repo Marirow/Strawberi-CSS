@@ -3,11 +3,11 @@
 
 A series of accessibility stylesheets for Pokéfarm Q, designed around a universal 🍓 Button.
 - Want to click fast? Yes! Feed PKMN, go fishing, accept trades, and more with the click of a single button.
-- Aching hands? No worries! PFQ-Strawberi gives your joints some time to rest by letting you tap and click without moving your wrist.
+- Aching hands? No worries! Strawberi gives your joints some time to rest by letting you tap and click without moving your wrist.
 - Custom theme? No problem! Styling the Core Module styles the 🍓 Button everywhere, making personalization a breeze.
 - *Compatible with PFQ as of 4/4/24. QOL script recommended. Tested on Firefox.*
 
-Make farming easier. Install PFQ-Strawberi today.
+Make farming easier. Use Strawberi!
 
 ## 🍓 Instructions
 1. Access the Site Skins page at https://pokefarm.com/skin.
@@ -105,5 +105,5 @@ Use whichever one works better for you.
 ### Q: Will there be a Garden Module?
 A: No, due to CSS limitations. For a practical solution, see [Neonyan's Easy Garden Watering](https://pfq.link/~V9yD).
 
-### Q: Are you worried about releasing this while the PFQ code rewrite is going on?
-A: Not really. I trust Niet to do a good job.
+### Q: Are you worried about releasing this while the PFQ Rework is going on?
+A: Not really. I trust Niet to do a good job. If the HTML changes, Strawberi will update accordingly.
