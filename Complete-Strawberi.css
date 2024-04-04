@@ -27,7 +27,7 @@ button.big[data-action='acceptgift']::before,
 button#eggreload::before, /*LAB*/
 #orusereloader>span>button::before {
 	position: fixed; height: 10vh; width: auto; left: 0; bottom: 0; right: 0;
-	line-height: 10vh; font-size: 9vh; text-align: center;
+	line-height: 10vh; font-size: 9vh; text-align: center; font-weight: normal;
 	background: radial-gradient(circle, rgba(226,255,205,1) 20%, rgba(185,242,160,1) 100%);
 	border: 2px solid #ff7d7d;
 	border-radius: 10px 10px 0px 0px; 
