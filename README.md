@@ -24,9 +24,9 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 - Creates the 🍓 Button(s), allowing the other modules to use them.
 - Can be modified to change the style, size, and position of the 🍓 Button.
 
-### 🍓 Dialog Module
-- Allows the user to quickly close "dialog" prompts, like pressing Enter on the keyboard.
-- Makes the other modules faster and easier to use.
+### 🍓 Extra Module
+- Extra functionality for other modules, including what used to be the Dialog Module.
+- Allows the user to quickly close "dialog" prompts, same as pressing the Enter key.
 - Only affects "yes" prompts, not "cancel" prompts.
 
 ### 🍓 Fields Module
