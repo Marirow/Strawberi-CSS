@@ -9,9 +9,6 @@
 #content {
   padding-bottom: 15vh;
 }
-.mq15 #content:has(#field_field[data-mode='public']) {
-  margin-bottom: 31vh;
-}
 
 /*create the 🍓 Buttons*/
 /*targets every single button on the site ⚠️*/
@@ -30,14 +27,6 @@ a[data-fishspot]::before,
   border: 2px solid #ff7d7d; border-radius: 10px 10px 0px 0px; 
   z-index: 100!important;
   cursor: pointer; user-select: none;
-}
-
-/*make the Field 🍓 Button taller than the others for convenience*/
-.mq15 [href='/user/~clickback']::before,
-.mq15 #field_nav button[data-action='next']::before,
-.mq15 #field_berries a[data-berry]::before,
-.mq15 .fieldmon.cormyr::before {
-  height: 35vh; line-height: 35vh;
 }
 
 
@@ -140,6 +129,17 @@ button#eggreload:enabled::before {
 /*---------------🍓---------------*\
   #FIELD-MODULE
 \*---------------🍓---------------*/
+
+/*make the Field 🍓 Button taller than the others for convenience*/
+.mq15 [href='/user/~clickback']::before,
+.mq15 #field_nav button[data-action='next']::before,
+.mq15 #field_berries a[data-berry]::before,
+.mq15 .fieldmon.cormyr::before {
+  height: 35vh; line-height: 35vh;
+}
+.mq15 #content:has(#field_field[data-mode='public']) {
+  margin-bottom: 36vh;
+}
 
 #content:has(.fieldmon[data-flavour^='any']:not(.nothungry)) a[data-flavour='sour']::before,
 #content:has(.fieldmon[data-flavour^='sour']:not(.nothungry)) a[data-flavour='sour']::before,
