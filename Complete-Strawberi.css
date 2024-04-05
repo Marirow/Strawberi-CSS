@@ -7,6 +7,7 @@
 #notifications a::before, /*EXTRA*/
 body>.dialog>div>div>div>div>button::before, 
 #dcegglist button::before,
+#collectall button::before,
 [href='/user/~clickback']::before, /*FIELD*/
 #field_nav button[data-action='next']::before,
 #field_berries a[data-flavour]::before,
@@ -62,6 +63,8 @@ body>.dialog>div>div>div>div>button[data-cancelbutton='1']::before {content: non
 /*Use only ONE of the following options:*/
 #dcegglist button:last-of-type::before {content: '🍓';} /*adopt the last egg type of the list*/
 /*#dcegglist button:first-of-type::before {content: '🍓';}*/ /*adopt the first egg type of the list*/
+/*Training Bags*/
+#collectall button::before {content: '🍓';}
 
 
 /*🍓 Strawberi FIELDS Module*/
