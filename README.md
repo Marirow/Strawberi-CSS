@@ -97,7 +97,7 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 A: It's a different implementation.
 - OCF is developed for Chrome, Strawberi is developed for Firefox.
 - OCF is lightweight and standalone, Strawberi works across the site.
-- OCF uses more precise CSS selectors, Strawberi takes up less lines per-module.
+- OCF uses precise CSS selectors, Strawberi uses general selectors for scalability.
 - OCF can be toggled with the QOL script's checkboxes, Strawberi cannot.
 
 Use whichever one works better for you.
