@@ -34,30 +34,30 @@ body {
   * var(--bordercontent) would determine box-shadow color, but we turned that off.
   */
   --background-image: url("https://pokefarm.com/upload/:JPM4/D_lmenKirchspielErdbeerfeld2015.jpg");
-  --global: #ff7d7d;
-  --content: #d8ffcd;
+  --global: #ff6363;
+  --content: #ecffcd;
   --text: #2f2000;
-  --title: #acf2a0;
+  --title: #d1f995;
   --titletext: #2f2000;
-  --link: #e32b00;
-  --visitedlink: #cb9200;
-  --activelink: #00a2d0;
+  --link: #bc0034;
+  --visitedlink: #cf6c00;
+  --activelink: #0093d7;
 
   /*Extra CSS tab.*/
-  --borderglobal: #850000;
-  --bordertitle: #de0000;
-  --bordercontent: #de0000;
-  --liked: #2cff8b;
-  --disliked: #aa4444;
+  --borderglobal: #8e2626;
+  --bordertitle: #cc3e3e;
+  --bordercontent: #cc3e3e;
+  --liked: #7fff00;
+  --disliked: #af2727;
 
   /*Custom variables from here on out.*/
-  --navbtns: #ff7d7d;
-  --navbtnsborder: #b63d3d;
-  --navbookmark: #ff8b7f;
-  --navbookmarkborder: #ac473c;
-  --announce: #ff9a7f;
-  --announceborder: #ab523b;
-  --announcehover: #ffbb90;
+  --navbtns: #ff6363;
+  --navbtnsborder: #a71212;
+  --navbookmark: #ff7d63;
+  --navbookmarkborder: #a42911;
+  --announce: #ff9063;
+  --announceborder: #a23b11;
+  --announcehover: #ffb363;
 }
 
 * {
@@ -75,27 +75,29 @@ body {
 \*---------------🍓---------------*/
 
 #header {
-  background-color:   rgba(216, 255, 205, 0.9);
-  border-bottom: 0;
+  background-color:    rgba(209, 249, 149, 0.9);
+  border-bottom:       1px solid var(--bordertitle);
 }
 .mq15 #header {
-  background-color:   var(--content)!important;
+  background-color:    var(--title)!important;
 }
 
-/*Removes the tray effect on smaller screen sizes.*/
-.mq2 #head-middle {
-  border-top: 0!important;
-}
+.mq2 #head-middle,
 .mq3 #head-right {
-  border-top: 0!important;
-}
-
-/*Gives page headers a background for visibility.*/
-h1 {
-  background-color:   rgba(216, 255, 205, 0.9);
+  border-top:          1px solid var(--bordertitle)!important;
 }
 
 
+#notifs>a::after {
+  background-color:    var(--navbookmark)!important;
+}
+
+/*Gives page headers and links a background for visibility.*/
+h1, p>a {
+  background-color:    rgba(209, 249, 149, 0.9);
+  border-radius:       5px;
+  text-decoration: none;
+}
 
 /*---------------🍓---------------*\
   #STRAWBERI-NAVIGATION
@@ -103,11 +105,11 @@ h1 {
 
 #navigation {
   margin-top: 0px; padding-top: 5px;
-  background-color:   rgba(216, 255, 205, 0.9);
+  background-color:    rgba(209, 249, 149, 0.9);
   border: 0;
 }
 .mq15 #navigation, {
-  background-color:   var(--content)!important;
+  background-color:    var(--title)!important;
 }
 
 
@@ -116,16 +118,19 @@ h1 {
 }
 
 #navigation>#navbtns>li>a {
-  background-color:   var(--navbtns);
-  border-left:        2px solid var(--navbtnsborder);
-  border-bottom:      2px solid var(--navbtnsborder);
+  padding-top: 4px;
+  background-color:    var(--navbtns);
+  border-left:         2px solid var(--navbtnsborder);
+  border-bottom:       2px solid var(--navbtnsborder);
   border-top: 0;
   border-right: 0;
-  border-radius: 10px 20px 20px 20px;
+  border-radius:       10px 20px 20px 20px;
   font-weight: normal;
+  line-height: 14px;
 }
 .mq15 #navigation>#navbtns>li>a {
-  line-height: 14px;
+  padding-top: 0;
+  line-height: 8px;
 }
 
 /*This creates the top-left strawberry leaf effect.*/
@@ -134,8 +139,8 @@ h1 {
   top:    -1px;
   left:   -5px;
   border-color:        transparent;
-  border-top-color:    darkgreen;
-  border-left-color:   darkgreen;
+  border-top-color:    #165000;
+  border-left-color:   #165000;
   border-width: 10px;
   border-style: dotted;
   content:'';
@@ -144,7 +149,7 @@ h1 {
   position:absolute;
   top:    -3px;
   left:   -3px;
-  border-color:        limegreen;
+  border-color:        #62c400;
   border-bottom-color: transparent;
   border-right-color:  transparent;
   border-width: 10px;
@@ -178,8 +183,8 @@ h1 {
   bottom: -5px;
   left:   -5px;
   border-color:        transparent;
-  border-bottom-color: darkgreen;
-  border-left-color:   darkgreen;
+  border-bottom-color: #165000;
+  border-left-color:   #165000;
   border-width: 10px;
   border-style: dotted;
   content: "";
@@ -188,7 +193,7 @@ h1 {
   position:absolute;
   bottom: -3px;
   left:   -3px;
-  border-color:        limegreen;
+  border-color:        #62c400;
   border-top-color:    transparent;
   border-right-color:  transparent;
   border-width: 10px;
@@ -206,13 +211,13 @@ h1 {
 
 #announcements {
   padding: 4px 4px 0;
-  background-color:   rgba(216, 255, 205, 0.9);
+  background-color:   rgba(209, 249, 149, 0.9);
   border-bottom: 0;
   border-bottom-left-radius:  5px;
   border-bottom-right-radius: 5px;
 }
 .mq15 #announcements {
-  background-color:   var(--content)!important;
+  background-color:   var(--title)!important;
 }
 
 
@@ -243,7 +248,12 @@ h1 {
 }
 .mq15 #counters {
   height: 75px;
-  background-color:   var(--content)!important;
+  background-color:   var(--title)!important;
+}
+
+#counterlist>li {
+  border-left:        2px solid transparent!important;
+  border-right:       2px solid transparent!important;
 }
 
 #counters>#dailybonus{
@@ -269,7 +279,7 @@ h1 {
 .forumpost, 
 .tooltip_content,
 div[data-pid] {
-  background-color:   rgba(216, 255, 205, 0.9);
+  background-color:   rgba(209, 249, 149, 0.9);
 }
 
 #sheltersuccess,
@@ -280,9 +290,6 @@ div[data-pid] {
 
 #partybox {
   border-bottom: 0!important;
-}
-#partybox .party>div {
-  border-radius: 0px!important;
 }
 
 .party.wide>div {
