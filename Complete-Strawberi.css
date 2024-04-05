@@ -23,7 +23,7 @@ a[data-fishspot]::before,
   position: fixed; height: 10vh; width: auto; left: 0; bottom: 0; right: 0;
   font: normal normal normal 9vh/10vh "Trebuchet MS", sans-serif; 
   text-align: center; font-decoration: none; 
-  background: radial-gradient(circle, rgba(226,255,205,1) 20%, rgba(185,242,160,1) 100%);
+  background: radial-gradient(circle, #ecffcd 20%, #d1f995 100%);
   border: 2px solid #ff7d7d; border-radius: 10px 10px 0px 0px; 
   z-index: 100!important;
   cursor: pointer; user-select: none;
