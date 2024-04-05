@@ -14,7 +14,7 @@ Make farming easier. Use Strawberi!
 2. Paste the contents of the release file(s) into the "Extra CSS" section of the Skin Editor.
 3. **OR** use the integrated site skin by pasting **JPM4/strawberi** into the "Other Skin" path.
 
-## 🍓 Complete-Strawberi.css
+## 🍓 Strawberi.css
 Contains every Strawberi module in a single package. Recommended to inject as-is.
 
 Individual modules, listed below, can be disabled by removing the labeled CSS.
