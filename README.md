@@ -1,5 +1,5 @@
 # 🍓 PFQ-Strawberi: The Pokéfarm Q Accessibility Tool
-(TOS Disclaimer: **PFQ-Strawberi does not and cannot perform inputs on its own.**)
+(Reminder: **CSS does not and cannot perform inputs on its own.**)
 
 A series of accessibility stylesheets for Pokéfarm Q, designed around a universal 🍓 Button.
 - Want to click fast? Yes! Feed PKMN, go fishing, accept trades, and more with the click of a single button.
@@ -105,5 +105,5 @@ Use whichever one works better for you.
 ### Q: Will there be a Garden Module?
 A: No, due to CSS limitations. For a practical solution, see [Neonyan's Easy Garden Watering](https://pfq.link/~V9yD).
 
-### Q: Are you worried about releasing this while the PFQ Rework is going on?
-A: Not really. I trust Niet to do a good job. If the HTML changes, Strawberi will update accordingly.
+### Q: Are you worried about releasing this while the PFQ Recode v2 is going on?
+A: Not really. If the HTML changes, Strawberi will be updated accordingly.
