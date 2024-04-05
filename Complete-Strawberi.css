@@ -1,61 +1,146 @@
-/*🍓 Strawberi CORE Module*/
+/*---------------🍓---------------*\
+  #CORE-MODULE
+\*---------------🍓---------------*/
+
 /*make room on the screen for the 🍓 Buttons*/
-#footbar {display: none!important;}
-#content {padding-bottom: 15vh;}
-.mq15 #content:has(#field_field[data-mode='public']) {margin-bottom: 31vh;}
-/*create the 🍓 Buttons*/
-body>.dialog>div>div>div>div>button::before, /*DIALOG*/
-[href='/user/~clickback']::before, /*FIELD*/
-#field_nav button[data-action='next']::before,
-#field_berries a[data-flavour]::before,
-.fieldmon.cormyr::before,
-.action>.berrybuttons>a[data-berry]::before, /*PARTY*/
-.action>.berrybuttons>a[data-berry]::before,
-.action>table>tbody>tr>td>button::before,
-.action>a::before,
-.mu_navlink.next::before,
-a[data-fishspot='0']::before, /*FISHING*/
-#fishing>.panel>.center>p>button::before,
-button[data-battleend]::before,
-button[data-battleact='ball-624']::before,
-button[data-battleact='ball-623']::before,
-button[data-battleact='ball-597']::before,
-.boxlist>.panel>div>p>button[data-open]:not([disabled])::before, /*BOXES*/
-.autoevo>a::before, /*EVO*/
-.tradelist>li>a.view::before, /*TRADE*/
-button.big[data-action='acceptgift']::before,
-button#eggreload::before, /*LAB*/
-#orusereloader>span>button::before,
-button.br[data-collect]:not([disabled])::before, /*FORGE*/
-button.br[data-upgrade]:not([disabled])::before,
-button[data-shelter]:not([disabled])::before { /*SHELTER*/
-	position: fixed; height: 10vh; width: auto; left: 0; bottom: 0; right: 0;
-	font: normal normal normal 9vh/10vh "Trebuchet MS", sans-serif; 
-	text-align: center; font-decoration: none; 
-	background: radial-gradient(circle, rgba(226,255,205,1) 20%, rgba(185,242,160,1) 100%);
-	border: 2px solid #ff7d7d;
-	border-radius: 10px 10px 0px 0px; 
-	z-index: 100!important;
-	cursor: pointer;
-	user-select: none;
+#footbar {
+  display: none!important;
 }
+#content {
+  padding-bottom: 15vh;
+}
+.mq15 #content:has(#field_field[data-mode='public']) {
+  margin-bottom: 31vh;
+}
+
+/*create the 🍓 Buttons*/
+/*targets every single button on the site ⚠️*/
+button::before,
+#notifications a::before,
+[href='/user/~clickback']::before,
+a[data-flavour]::before, .fieldmon.cormyr::before,
+a[data-berry]::before, .action>a::before, .mu_navlink.next::before,
+a[data-fishspot]::before,
+.autoevo a::before,
+.tradelist a.view::before {
+  position: fixed; height: 10vh; width: auto; left: 0; bottom: 0; right: 0;
+  font: normal normal normal 9vh/10vh "Trebuchet MS", sans-serif; 
+  text-align: center; font-decoration: none; 
+  background: radial-gradient(circle, rgba(226,255,205,1) 20%, rgba(185,242,160,1) 100%);
+  border: 2px solid #ff7d7d; border-radius: 10px 10px 0px 0px; 
+  z-index: 100!important;
+  cursor: pointer; user-select: none;
+}
+
 /*make the Field 🍓 Button taller than the others for convenience*/
 .mq15 [href='/user/~clickback']::before,
 .mq15 #field_nav button[data-action='next']::before,
 .mq15 #field_berries a[data-berry]::before,
 .mq15 .fieldmon.cormyr::before {
-   	height: 30vh;
-	line-height: 30vh;
+  height: 35vh; line-height: 35vh;
 }
 
 
-/*🍓 Strawberi DIALOG Module*/
-.dialog {padding-bottom: 10vh;}
-body>.dialog>div>div>div>div>button:first-of-type::before {content: '🍓';}
-body>.dialog>div>div>div>div>button[data-cancelbutton='1']::before {content: none!important;}
 
 
-/*🍓 Strawberi FIELDS Module*/
+
+/*---------------🍓---------------*\
+  #EXTRA-MODULE
+\*---------------🍓---------------*/
+
+/*------------#NOTIFICATION-MODULE*/
+#notifications a:last-of-type::before {
+  content: '🟢';
+  z-index:950!important;
+}
+
+
+/*------------------#DIALOG-MODULE*/
+.dialog {
+  padding-bottom: 15vh;
+}
+.dialog button:first-of-type::before {
+  content: '🍓';
+}
+.dialog button[data-cancelbutton='1']::before {
+  content: none!important;
+}
+
+
+/*-----------------#DAYCARE-MODULE*/
+/**
+* Use one (1) of the following options.
+*
+* Adopt the first Egg in the list:
+* #dcegglist button:first-of-type::before {
+*
+* Adopt the last Egg in the list:
+* #dcegglist button:last-of-type::before {
+*
+* Variants are generally the second/last Egg in the list.
+*/
+#dcegglist button:last-of-type::before {
+  content: '🍓';
+}
+
+
+/*----------------#TRAINING-MODULE*/
+#collectall button::before {
+  content: '🍓';
+}
+
+
+
+
+
+/*---------------🍓---------------*\
+  #LAB-MODULE
+\*---------------🍓---------------*/
+
+button#eggreload:enabled::before {
+  content: '🔄';
+}
+
+#orusereloader button:not([disabled])::before {
+  content: '⏭️';
+}
+
+
+
+
+
+/*---------------🍓---------------*\
+  #PARTY-MODULE
+\*---------------🍓---------------*/
+/*Also works with Scour Missions.*/
+
+.mu_navlink.next::before,
+.mu_navlink.next.qolGetMore::before {
+  content: '🍓';
+  /*Load below all other buttons.*/
+  z-index: 1!important;
+}
+
+.berrybuttons[data-down='any']>[data-berry='oran']::before,
+.berrybuttons[data-down='any']>[data-berry='aspear']::before,
+.berrybuttons[data-up='sour']>[data-berry='aspear']::before,
+.berrybuttons[data-up='spicy']>[data-berry='cheri']::before,
+.berrybuttons[data-up='dry']>[data-berry='chesto']::before,
+.berrybuttons[data-up='sweet']>[data-berry='pecha']::before,
+.berrybuttons[data-up='bitter']>[data-berry='rawst']::before,
+.action button::before,
+.action a::before {
+  content: '🍓';
+}
+
+
+
+
+
+/*---------------🍓---------------*\
+  #FIELD-MODULE
+\*---------------🍓---------------*/
+
 #content:has(.fieldmon[data-flavour^='any']:not(.nothungry)) a[data-flavour='sour']::before,
 #content:has(.fieldmon[data-flavour^='sour']:not(.nothungry)) a[data-flavour='sour']::before,
 #content:has(.fieldmon[data-flavour^='spicy']:not(.nothungry)) a[data-flavour='spicy']::before,
@@ -65,103 +150,151 @@ body>.dialog>div>div>div>div>button[data-cancelbutton='1']::before {content: non
 #content:has(#field_berries.selected) .fieldmon.cormyr:not(.nothungry)::before,
 #content:has(#field_field[data-mode='public']):has([data-action='next'][disabled]) [href='/user/~clickback']::before,
 button[data-action='next']:not([disabled])::before, {
-	content: '🍓';
+  content: '🍓';
 }
+
 #content:has(.fieldmon.cormyr:not(.nothungry)) a[data-flavour]::before,
 #content:has(.fieldmon:not(.nothungry)) [href='/user/~clickback']::before,
 #content:has(.fieldmon:not(.nothungry)) button[data-action='next']::before,
 #content:has(#field_field[data-mode='private']) [href='/user/~clickback']::before,
 #content:has(#field_field[data-mode='private']) button[data-action='next']::before {
-	content: none!important;
+  content: none!important;
 }
+
 #field_berries.selected a {
-	opacity: 1!important;
+  opacity: 1!important;
 }
 
 
-/*🍓 Strawberi PARTY SCOUR Module*/
-.mu_navlink.next::before,
-.mu_navlink.next.qolGetMore::before {
-	content: '🍓';
-	z-index: 1!important; /*must load below all of the other button instances*/
+
+
+
+/*---------------🍓---------------*\
+  #SHELTER-MODULE
+\*---------------🍓---------------*/
+
+/*Fixes compatibility issue with QOL script.*/
+.qoltooltipgrid {
+  transform: none!important;
 }
-.action>.berrybuttons[data-down='any']>[data-berry='oran']::before,
-.action>.berrybuttons[data-down='any']>[data-berry='aspear']::before,
-.action>.berrybuttons[data-up='sour']>[data-berry='aspear']::before,
-.action>.berrybuttons[data-up='spicy']>[data-berry='cheri']::before,
-.action>.berrybuttons[data-up='dry']>[data-berry='chesto']::before,
-.action>.berrybuttons[data-up='sweet']>[data-berry='pecha']::before,
-.action>.berrybuttons[data-up='bitter']>[data-berry='rawst']::before,
-.action>table>tbody>tr>td>button::before,
-.party>div>.action>a::before {
-	content: '🍓';
+
+/**
+* Use one (1) of the following options.
+*
+* Reload without any flutes:
+* button[data-shelter='reload']:not([disabled])::before {
+*
+* Reload using the white flute:
+* button[data-shelter='whiteflute']:not([disabled])::before {
+*
+* Reload using the black flute:
+* button[data-shelter='blackflute']:not([disabled])::before {
+*/
+button[data-shelter='reload']:not([disabled])::before {
+  content: '🔄';
+  /*Load below all other buttons.*/
+  z-index: 1!important;
+}
+
+button[data-shelter='adopt']::before {
+  content: '🍓';
 }
 
 
-/*🍓 Strawberi FISHING Module*/
+
+
+
+/*---------------🍓---------------*\
+  #EVOLVE-MODULE
+\*---------------🍓---------------*/
+/*Requires QOL to be enabled.*/
+
+.autoevo a::before {
+  content: '✨';
+}
+
+#farmnews-evolutions>p>label>input:not(:checked) .autoevo>a::before {
+  content: none!important;
+}
+
+
+
+
+/*---------------🍓---------------*\
+  #WISH-MODULE
+\*---------------🍓---------------*/
+
+button.br[data-collect]:not([disabled])::before {
+  content: '🍓';
+}
+button.br[data-upgrade]:not([disabled])::before {
+  content: '🍓';
+  /*Load below all other buttons.*/
+  z-index: 1!important;
+}
+
+
+
+
+
+/*---------------🍓---------------*\
+  #FISH-MODULE
+\*---------------🍓---------------*/
+
 a[data-fishspot='0']::before,
 button[data-battleend]::before,
 button[data-battleact='ball-624']::before,
 button[data-battleact='ball-623']::before,
 button[data-battleact='ball-597']::before {
-	content: '🍓';
+  content: '🍓';
 }
-#fishing>.panel>.center>p>button::before {content: '🌊';}
-#fishing>.panel>.center>p>button.shake::before {content: '🎣';}
-/*throw the cheapest Fishing Ball first*/
+
+#fishing>.panel>.center>p>button::before {
+  content: '🌊';
+}
+
+#fishing>.panel>.center>p>button.shake::before {
+  content: '🎣';
+}
+
+/*Throw the cheapest Fishing Ball first.*/
 #fishing:has([data-battleact="ball-597"]) button[data-battleact='ball-624']::before,
 #fishing:has([data-battleact="ball-597"]) button[data-battleact='ball-623']::before,
 #fishing:has([data-battleact="ball-623"]) button[data-battleact='ball-624']::before {
-	content: none!important;
+  content: none!important;
 }
 
 
-/*🍓 Strawberi BOXES Module*/
-.boxlist>.panel>div>p>button[data-open]:not([disabled])::before {content: '🎁';}
-/*don't accidentally open any boxes of a higher tier*/
-.boxlist>.panel>div>p>button[data-open='boxbox']::before,
-.boxlist>.panel>div>p>button[data-open='boxboxbox']::before,
-.boxlist>.panel>div>p>button[data-open='gragonbox']::before,
-.boxlist>.panel>div>p>button[data-open='premiumbox2']::before {
-	content: none!important;
+
+
+
+/*---------------🍓---------------*\
+  #TRADE-MODULE
+\*---------------🍓---------------*/
+
+.tradelist a.view::before {
+  content: '🍓';
 }
-
-/*🍓 Strawberi EVOLUTION Module*/
-/*This code REQUIRES QOL to be enabled.*/
-.autoevo>a::before {content: '✨';}
-#farmnews-evolutions>p>label>input:not(:checked) .autoevo>a::before {content: none!important;}
-
-
-/*🍓 Strawberi TRADE Module*/
-.tradelist>li>a.view::before {content: '🍓';}
-button.big[data-action='acceptgift']::before {content: '🤝';}
-
-
-/*🍓 Strawberi LAB Module*/
-button#eggreload:enabled::before {content: '🔄';}
-#orusereloader>span>button:not([disabled])::before {content: '⏭️';}
-
-
-/*🍓 Strawberi FORGE Module*/
-button.br[data-collect]:not([disabled])::before {content: '🍓';}
-button.br[data-upgrade]:not([disabled])::before {
-	content: '🍓';
-	z-index: 1!important; /*must load below all of the other button instances*/
+button.big[data-action='acceptgift']::before {
+  content: '🤝';
 }
 
 
-/*🍓 Strawberi SHELTER Module*/
-/*QOL script compatibility*/
-.qoltooltipgrid {
-	transform: none!important;
+
+
+
+/*---------------🍓---------------*\
+  #BOXES-MODULE
+\*---------------🍓---------------*/
+
+.boxlist button[data-open]:not([disabled])::before {
+  content: '🎁';
 }
-/*Use only ONE of the following buttons to reload:*/
-button[data-shelter='reload']:not([disabled])::before {
-/*button[data-shelter='whiteflute']:not([disabled])::before {*/
-/*button[data-shelter='blackflute']:not([disabled])::before {*/
-	content: '🔄';
-	z-index: 1!important; /*must load below all of the other button instances*/
-}
-button[data-shelter='adopt']::before {
-	content: '🍓';
+
+/*Don't accidentally open any boxes of a higher tier.*/
+.boxlist button[data-open='boxbox']::before,
+.boxlist button[data-open='boxboxbox']::before,
+.boxlist button[data-open='gragonbox']::before,
+.boxlist button[data-open='premiumbox2']::before {
+  content: none!important;
 }
