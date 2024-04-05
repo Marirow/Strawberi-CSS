@@ -24,7 +24,7 @@ a[data-fishspot]::before,
   font: normal normal normal 9vh/10vh "Trebuchet MS", sans-serif; 
   text-align: center; font-decoration: none; 
   background: radial-gradient(circle, #ecffcd 20%, #d1f995 100%);
-  border: 2px solid #ff7d7d; border-radius: 10px 10px 0px 0px; 
+  border: 2px solid #cc3e3e; border-radius: 10px 10px 0px 0px; 
   z-index: 100!important;
   cursor: pointer; user-select: none;
 }
