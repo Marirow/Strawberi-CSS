@@ -4,7 +4,8 @@
 #content {padding-bottom: 15vh;}
 .mq15 #content:has(#field_field[data-mode='public']) {margin-bottom: 31vh;}
 /*create the 🍓 Buttons*/
-body>.dialog>div>div>div>div>button::before, /*DIALOG*/
+body>.dialog>div>div>div>div>button::before, /*EXTRA*/
+#dcegglist button::before,
 [href='/user/~clickback']::before, /*FIELD*/
 #field_nav button[data-action='next']::before,
 #field_berries a[data-flavour]::before,
@@ -49,10 +50,15 @@ button[data-shelter]:not([disabled])::before { /*SHELTER*/
 }
 
 
-/*🍓 Strawberi DIALOG Module*/
+/*🍓 Strawberi EXTRA Module*/
+/*Dialog*/
 .dialog {padding-bottom: 15vh;}
 body>.dialog>div>div>div>div>button:first-of-type::before {content: '🍓';}
 body>.dialog>div>div>div>div>button[data-cancelbutton='1']::before {content: none!important;}
+/*Daycare Adoption*/
+/*Use only ONE of the following options:*/
+#dcegglist button:last-of-type::before {content: '🍓';} /*adopt the last egg type of the list*/
+/*#dcegglist button:first-of-type::before {content: '🍓';}*/ /*adopt the first egg type of the list*/
 
 
 /*🍓 Strawberi FIELDS Module*/
