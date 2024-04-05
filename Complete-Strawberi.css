@@ -4,51 +4,27 @@
 #content {padding-bottom: 15vh;}
 .mq15 #content:has(#field_field[data-mode='public']) {margin-bottom: 31vh;}
 /*create the 🍓 Buttons*/
+button::before, /*targets every single button on the site ⚠️*/
 #notifications a::before, /*EXTRA*/
-body>.dialog>div>div>div>div>button::before, 
-#dcegglist button::before,
-#collectall button::before,
-[href='/user/~clickback']::before, /*FIELD*/
-#field_nav button[data-action='next']::before,
-#field_berries a[data-flavour]::before,
-.fieldmon.cormyr::before,
-.action>.berrybuttons>a[data-berry]::before, /*PARTY*/
-.action>.berrybuttons>a[data-berry]::before,
-.action>table>tbody>tr>td>button::before,
-.action>a::before,
-.mu_navlink.next::before,
-a[data-fishspot='0']::before, /*FISHING*/
-#fishing>.panel>.center>p>button::before,
-button[data-battleend]::before,
-button[data-battleact='ball-624']::before,
-button[data-battleact='ball-623']::before,
-button[data-battleact='ball-597']::before,
-.boxlist>.panel>div>p>button[data-open]:not([disabled])::before, /*BOXES*/
-.autoevo>a::before, /*EVO*/
-.tradelist>li>a.view::before, /*TRADE*/
-button.big[data-action='acceptgift']::before,
-button#eggreload::before, /*LAB*/
-#orusereloader>span>button::before,
-button.br[data-collect]:not([disabled])::before, /*FORGE*/
-button.br[data-upgrade]:not([disabled])::before,
-button[data-shelter]:not([disabled])::before { /*SHELTER*/
+[href='/user/~clickback']::before, a[data-flavour]::before, .fieldmon.cormyr::before, /*FIELD*/
+a[data-berry]::before, .action>a::before, .mu_navlink.next::before, /*PARTY*/
+a[data-fishspot]::before, /*FISHING*/
+.autoevo a::before, /*EVO*/
+.tradelist a.view::before { /*TRADE*/
 	position: fixed; height: 10vh; width: auto; left: 0; bottom: 0; right: 0;
 	font: normal normal normal 9vh/10vh "Trebuchet MS", sans-serif; 
 	text-align: center; font-decoration: none; 
 	background: radial-gradient(circle, rgba(226,255,205,1) 20%, rgba(185,242,160,1) 100%);
-	border: 2px solid #ff7d7d;
-	border-radius: 10px 10px 0px 0px; 
+	border: 2px solid #ff7d7d; border-radius: 10px 10px 0px 0px; 
 	z-index: 100!important;
-	cursor: pointer;
-	user-select: none;
+	cursor: pointer; user-select: none;
 }
 /*make the Field 🍓 Button taller than the others for convenience*/
 .mq15 [href='/user/~clickback']::before,
 .mq15 #field_nav button[data-action='next']::before,
 .mq15 #field_berries a[data-berry]::before,
 .mq15 .fieldmon.cormyr::before {
-   	height: 30vh;
-	line-height: 30vh;
+   	height: 35vh; line-height: 35vh;
 }
 
 
