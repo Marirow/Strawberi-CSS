@@ -50,7 +50,7 @@ button[data-shelter]:not([disabled])::before { /*SHELTER*/
 
 
 /*🍓 Strawberi DIALOG Module*/
-.dialog {padding-bottom: 10vh;}
+.dialog {padding-bottom: 15vh;}
 body>.dialog>div>div>div>div>button:first-of-type::before {content: '🍓';}
 body>.dialog>div>div>div>div>button[data-cancelbutton='1']::before {content: none!important;}
 
