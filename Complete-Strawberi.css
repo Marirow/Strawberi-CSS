@@ -4,7 +4,8 @@
 #content {padding-bottom: 15vh;}
 .mq15 #content:has(#field_field[data-mode='public']) {margin-bottom: 31vh;}
 /*create the 🍓 Buttons*/
-body>.dialog>div>div>div>div>button::before, /*EXTRA*/
+#notifications a::before, /*EXTRA*/
+body>.dialog>div>div>div>div>button::before, 
 #dcegglist button::before,
 [href='/user/~clickback']::before, /*FIELD*/
 #field_nav button[data-action='next']::before,
@@ -51,6 +52,8 @@ button[data-shelter]:not([disabled])::before { /*SHELTER*/
 
 
 /*🍓 Strawberi EXTRA Module*/
+/*Notifications*/
+#notifications a:last-of-type::before {content: '🟢'; z-index:950!important;}
 /*Dialog*/
 .dialog {padding-bottom: 15vh;}
 body>.dialog>div>div>div>div>button:first-of-type::before {content: '🍓';}
