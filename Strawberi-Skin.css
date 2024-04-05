@@ -75,11 +75,11 @@ body {
 \*---------------🍓---------------*/
 
 #header {
-  background-color:   rgba(216, 255, 205, 0.9);
+  background-color:    rgba(216, 255, 205, 0.9);
   border-bottom: 0;
 }
 .mq15 #header {
-  background-color:   var(--content)!important;
+  background-color:    var(--content)!important;
 }
 
 /*Removes the tray effect on smaller screen sizes.*/
@@ -90,12 +90,11 @@ body {
   border-top: 0!important;
 }
 
-/*Gives page headers a background for visibility.*/
-h1 {
-  background-color:   rgba(216, 255, 205, 0.9);
+/*Gives page headers and links a background for visibility.*/
+h1, p>a {
+  background-color:    rgba(216, 255, 205, 0.9);
+  border-radius:       5px;
 }
-
-
 
 /*---------------🍓---------------*\
   #STRAWBERI-NAVIGATION
@@ -103,11 +102,11 @@ h1 {
 
 #navigation {
   margin-top: 0px; padding-top: 5px;
-  background-color:   rgba(216, 255, 205, 0.9);
+  background-color:    rgba(216, 255, 205, 0.9);
   border: 0;
 }
 .mq15 #navigation, {
-  background-color:   var(--content)!important;
+  background-color:    var(--content)!important;
 }
 
 
@@ -116,16 +115,18 @@ h1 {
 }
 
 #navigation>#navbtns>li>a {
-  background-color:   var(--navbtns);
-  border-left:        2px solid var(--navbtnsborder);
-  border-bottom:      2px solid var(--navbtnsborder);
+  padding-top: 4px;
+  background-color:    var(--navbtns);
+  border-left:         2px solid var(--navbtnsborder);
+  border-bottom:       2px solid var(--navbtnsborder);
   border-top: 0;
   border-right: 0;
-  border-radius: 10px 20px 20px 20px;
+  border-radius:       10px 20px 20px 20px;
   font-weight: normal;
+  line-height: 14px;
 }
 .mq15 #navigation>#navbtns>li>a {
-  line-height: 14px;
+  line-height: 8px;
 }
 
 /*This creates the top-left strawberry leaf effect.*/
