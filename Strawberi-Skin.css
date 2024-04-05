@@ -39,14 +39,14 @@ body {
   --text: #2f2000;
   --title: #d1f995;
   --titletext: #2f2000;
-  --link: #e3003f;
-  --visitedlink: #e87900;
-  --activelink: #00a0eb;
+  --link: #bc0034;
+  --visitedlink: #cf6c00;
+  --activelink: #0093d7;
 
   /*Extra CSS tab.*/
-  --borderglobal: #850000;
-  --bordertitle: #de0000;
-  --bordercontent: #de0000;
+  --borderglobal: #8e2626;
+  --bordertitle: #cc3e3e;
+  --bordercontent: #cc3e3e;
   --liked: #7fff00;
   --disliked: #af2727;
 
@@ -76,28 +76,27 @@ body {
 
 #header {
   background-color:    rgba(209, 249, 149, 0.9);
-  border-bottom: 0;
+  border-bottom:       1px solid var(--bordertitle);
 }
 .mq15 #header {
   background-color:    var(--title)!important;
 }
 
-#notifs>a::after {
-  background-color:    var(--navbookmark)!important;
+.mq2 #head-middle,
+.mq3 #head-right {
+  border-top:          1px solid var(--bordertitle)!important;
 }
 
-/*Removes the tray effect on smaller screen sizes.*/
-.mq2 #head-middle {
-  border-top: 0!important;
-}
-.mq3 #head-right {
-  border-top: 0!important;
+
+#notifs>a::after {
+  background-color:    var(--navbookmark)!important;
 }
 
 /*Gives page headers and links a background for visibility.*/
 h1, p>a {
   background-color:    rgba(209, 249, 149, 0.9);
   border-radius:       5px;
+  text-decoration: none;
 }
 
 /*---------------🍓---------------*\
@@ -252,6 +251,11 @@ h1, p>a {
   background-color:   var(--title)!important;
 }
 
+#counterlist>li {
+  border-left:        2px solid transparent!important;
+  border-right:       2px solid transparent!important;
+}
+
 #counters>#dailybonus{
   margin-top: 0;
   border-top: 0;
@@ -286,9 +290,6 @@ div[data-pid] {
 
 #partybox {
   border-bottom: 0!important;
-}
-#partybox .party>div {
-  border-radius: 0px!important;
 }
 
 .party.wide>div {
