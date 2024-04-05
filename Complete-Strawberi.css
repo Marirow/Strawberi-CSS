@@ -48,6 +48,7 @@ a[data-fishspot]::before,
   #EXTRA-MODULE
 \*---------------🍓---------------*/
 
+
 /*------------#NOTIFICATION-MODULE*/
 #notifications a:last-of-type::before {
   content: '🟢';
@@ -62,7 +63,8 @@ a[data-fishspot]::before,
 .dialog button:first-of-type::before {
   content: '🍓';
 }
-.dialog button[data-cancelbutton='1']::before {
+.dialog button[data-cancelbutton='1']::before,
+.dialog button[data-field]::before {
   content: none!important;
 }
 
