@@ -66,9 +66,6 @@ body {
   box-shadow: none!important;
 }
 
-/*Elements that don't have a header tab should be transparent.*/
-
-
 
 
 
@@ -128,7 +125,6 @@ h1 {
   font-weight: normal;
 }
 .mq15 #navigation>#navbtns>li>a {
-  padding-top: 4px;
   line-height: 14px;
 }
 
