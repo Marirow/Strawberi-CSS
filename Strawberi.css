@@ -25,7 +25,7 @@ a[data-fishspot]::before,
   text-align: center; font-decoration: none; 
   background: radial-gradient(circle, #ecffcd 20%, #d1f995 100%);
   border: 2px solid #cc3e3e; border-radius: 10px 10px 0px 0px; 
-  z-index: 100!important;
+  z-index: 15;
   cursor: pointer; user-select: none;
 }
 
@@ -41,7 +41,8 @@ a[data-fishspot]::before,
 /*------------#NOTIFICATION-MODULE*/
 #notifications a:last-of-type::before {
   content: '🟢';
-  z-index:950!important;
+  /*Load above all other buttons.*/
+  z-index: 20;
 }
 
 
@@ -109,7 +110,7 @@ button#eggreload:enabled::before {
 .mu_navlink.next.qolGetMore::before {
   content: '🍓';
   /*Load below all other buttons.*/
-  z-index: 1!important;
+  z-index: 5;
 }
 
 .berrybuttons[data-down='any'] a[data-berry='oran']::before,
@@ -195,7 +196,7 @@ button[data-action='next']:not([disabled])::before, {
 button[data-shelter='reload']:not([disabled])::before {
   content: '🔄';
   /*Load below all other buttons.*/
-  z-index: 1!important;
+  z-index: 5;
 }
 
 button[data-shelter='adopt']::before {
@@ -232,7 +233,7 @@ button.br[data-collect]:not([disabled])::before {
 button.br[data-upgrade]:not([disabled])::before {
   content: '🍓';
   /*Load below all other buttons.*/
-  z-index: 1!important;
+  z-index: 5;
 }
 
 
