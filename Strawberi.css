@@ -21,7 +21,7 @@ a[data-fishspot]::before,
 .autoevo a::before,
 .tradelist a.view::before {
   position: fixed; height: 10vh; width: auto; left: 0; bottom: 0; right: 0;
-  font: normal normal normal 9vh/10vh "Trebuchet MS", sans-serif; 
+  font: normal normal normal 8vh/10vh "Trebuchet MS", sans-serif; 
   text-align: center; font-decoration: none; 
   background: radial-gradient(circle, #ecffcd 20%, #d1f995 100%);
   border: 2px solid #cc3e3e; border-radius: 10px 10px 0px 0px; 
