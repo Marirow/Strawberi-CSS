@@ -20,7 +20,10 @@ a[data-berry]::before, .action>a::before, .mu_navlink.next::before,
 a[data-fishspot]::before,
 .autoevo a::before,
 .tradelist a.view::before {
-  position: fixed; height: 10vh; width: auto; left: 0; bottom: 0; right: 0;
+  position: fixed;
+  height: 10vh; width: min(500px, 99vw); 
+  left: 50%; bottom: 0;
+  transform: translate(-50%);
   font: normal normal normal 8vh/10vh "Trebuchet MS", sans-serif; 
   text-align: center; font-decoration: none; 
   background: radial-gradient(circle, #ecffcd 20%, #d1f995 100%);
