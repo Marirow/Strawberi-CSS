@@ -1,5 +1,4 @@
 # 🍓 PFQ-Strawberi: The Pokéfarm Q Accessibility Tool
-(Reminder: **CSS does not and cannot perform inputs on its own.**)
 
 A series of accessibility stylesheets for Pokéfarm Q, designed around a universal 🍓 Button.
 - Want to click fast? Yes! Feed PKMN, go fishing, accept trades, and more with the click of a single button.
@@ -7,7 +6,7 @@ A series of accessibility stylesheets for Pokéfarm Q, designed around a univers
 - Custom theme? No problem! Styling the Core Module styles the 🍓 Button everywhere, making personalization a breeze.
 - *Compatible with PFQ as of 4/4/24. QOL script recommended. Tested on Firefox.*
 
-Make farming easier. Use Strawberi!
+Make farming easier; use Strawberi.
 
 ## 🍓 Instructions
 1. Access the Site Skins page at https://pokefarm.com/skin.
@@ -93,17 +92,21 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 
 ## Q&A
 
-### Q: How does this compare to [Winterbraid's One Click Fields](https://pfq.link/~Mzx6)?
+### Q: How does Strawberi's Field Module compare to [Winterbraid's One Click Fields](https://pfq.link/~Mzx6)?
 A: It's a different implementation.
-- OCF is developed for Chrome, Strawberi is developed for Firefox.
-- OCF is lightweight and standalone, Strawberi works across the site.
-- OCF uses precise CSS selectors, Strawberi uses general selectors for scalability.
-- OCF can be toggled with the QOL script's checkboxes, Strawberi cannot.
+- OCF is developed for Chrome;
+- Strawberi is developed for Firefox.
+- OCF is lightweight and standalone;
+- Strawberi covers most of the site.
+- OCF uses precise CSS selectors;
+- Strawberi is designed to be scalable.
+- OCF can be toggled with the QOL script;
+- Strawberi cannot.
 
 Use whichever one works better for you.
 
 ### Q: Will there be a Garden Module?
 A: No, due to CSS limitations. For a practical solution, see [Neonyan's Easy Garden Watering](https://pfq.link/~V9yD).
 
-### Q: Are you worried about releasing this while the PFQ Recode v2 is going on?
+### Q: Are you worried about releasing this during the PFQ Recode?
 A: Not really. If the HTML changes, Strawberi will be updated accordingly.
