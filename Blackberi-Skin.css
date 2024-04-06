@@ -1,0 +1,342 @@
+/*---------------🍓---------------*\
+  #BLACKBERI-SKIN
+\*---------------🍓---------------*/
+
+/**
+* Background credit: boodrian, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+*
+* We use a lot of variables here, covering basically every color being used.
+* This makes it easier to edit colors on the fly, or customize the theme for yourself.
+*
+* For formatting, use this order:
+* 
+* [display]
+* [position]
+* [margin][padding]
+* [size]
+* [background]
+* [border][box-shadow]
+* [border-radius]
+* [font]
+* [line-height]
+* [content]
+*/
+
+body {
+  /**
+  * You should copy/paste the variables to/from the main site skin editor.
+  *
+  * Don't get variabels mixed up:
+  *
+  * var(--global) is your HIGHLIGHT color, not the background.
+  * var(--title) is the background, var(--titletext) is the header.
+  * var(--bordercontent) would determine box-shadow color, but we turned that off.
+  */
+  --background-image: url("https://pokefarm.com/upload/:JPM4/NightAtFalconridgeManorFarm.jpg");
+  --global: #cd1767;
+  --content: #29225c;
+  --text: #ffeaff;
+  --title: #1b1642;
+  --titletext: #ffeaff;
+  --link: #ffde45;
+  --visitedlink: #f37221;
+  --activelink: #854ef6;
+
+  /*Extra CSS tab.*/
+  --borderglobal: #761d44;
+  --bordertitle: #8e2653;
+  --bordercontent: #8e2653;
+  --liked: #17e6ab;
+  --disliked: #7d183f;
+
+  /*Custom variables from here on out.*/
+  --navbtns: #cd1767;
+  --navbtnsborder: #84033c;
+  --navbookmark: #cd1756;
+  --navbookmarkborder: #81032e;
+  --announce: #cd174c;
+  --announceborder: #790326;
+  --announcehover: #9a0a34;
+}
+
+* {
+  font-family: Trebuchet MS;
+  /*We really don't like the red glow border, but you can re-enable it here.*/
+  box-shadow: none!important;
+}
+
+
+
+
+
+/*---------------🍓---------------*\
+  #STRAWBERI-HEADER
+\*---------------🍓---------------*/
+
+#header {
+  background-color:    rgba(27, 22, 66, 0.9);
+  border-bottom:       1px solid var(--bordertitle);
+}
+.mq15 #header {
+  background-color:    var(--title)!important;
+}
+
+.mq2 #head-middle,
+.mq3 #head-right {
+  border-top:          1px solid var(--bordertitle)!important;
+}
+
+
+#notifs>a::after {
+  background-color:    var(--navbookmark)!important;
+}
+
+/*Gives page headers and links a background for visibility.*/
+h1, p>a {
+  background-color:    rgba(27, 22, 66, 0.9);
+  border-radius:       5px;
+  text-decoration: none;
+}
+
+/*---------------🍓---------------*\
+  #STRAWBERI-NAVIGATION
+\*---------------🍓---------------*/
+
+#navigation {
+  margin-top: 0px; padding-top: 5px;
+  background-color:    rgba(27, 22, 66, 0.9);
+  border: 0;
+}
+.mq15 #navigation, {
+  background-color:    var(--title)!important;
+}
+
+
+#navigation>#navbtns>li {
+  height: 58px;
+}
+
+#navigation>#navbtns>li>a {
+  padding-top: 4px;
+  background-color:    var(--navbtns);
+  border-left:         2px solid var(--navbtnsborder);
+  border-bottom:       2px solid var(--navbtnsborder);
+  border-top: 0;
+  border-right: 0;
+  border-radius:       10px 20px 20px 20px;
+  font-weight: normal;
+  line-height: 14px;
+}
+.mq15 #navigation>#navbtns>li>a {
+  padding-top: 0;
+  line-height: 8px;
+}
+
+/*This creates the top-left strawberry leaf effect.*/
+#navigation>#navbtns>li>a::before{
+  position:absolute;
+  top:    -1px;
+  left:   -5px;
+  border-color:        transparent;
+  border-top-color:    #165000;
+  border-left-color:   #165000;
+  border-width: 10px;
+  border-style: dotted;
+  content:'';
+}
+#navigation>#navbtns>li>a::after{
+  position:absolute;
+  top:    -3px;
+  left:   -3px;
+  border-color:        #62c400;
+  border-bottom-color: transparent;
+  border-right-color:  transparent;
+  border-width: 10px;
+  border-style: dotted;
+  content:'';
+}
+
+
+#navigation>#navbookmark {
+  margin-top:0;
+  margin-bottom:0;
+}
+
+#navigation>#navbookmark>li {
+  padding-top:0!important;
+}
+
+#navigation>#navbookmark>li>a {
+  background-color:    var(--navbookmark);
+  border-bottom:       2px solid var(--navbookmarkborder);
+  border-left:         2px solid var(--navbookmarkborder);
+  border-top:          0;
+  border-right:        0;
+  border-radius:       20px 20px 20px 10px;
+  font-weight: normal;
+}
+
+/*This creates the bottom-left strawberry leaf effect.*/
+#navigation>#navbookmark>li>a::before{
+  position: absolute;
+  bottom: -5px;
+  left:   -5px;
+  border-color:        transparent;
+  border-bottom-color: #165000;
+  border-left-color:   #165000;
+  border-width: 10px;
+  border-style: dotted;
+  content: "";
+}
+#navigation>#navbookmark>li>a::after{
+  position:absolute;
+  bottom: -3px;
+  left:   -3px;
+  border-color:        #62c400;
+  border-top-color:    transparent;
+  border-right-color:  transparent;
+  border-width: 10px;
+  border-style: dotted;
+  content: "";
+}
+
+
+
+
+
+/*---------------🍓---------------*\
+  #STRAWBERI-ANNOUNCEMENTS
+\*---------------🍓---------------*/
+
+#announcements {
+  padding: 4px 4px 0;
+  background-color:   rgba(27, 22, 66, 0.9);
+  border-bottom: 0;
+  border-bottom-left-radius:  5px;
+  border-bottom-right-radius: 5px;
+}
+.mq15 #announcements {
+  background-color:   var(--title)!important;
+}
+
+
+#announcements>ul {
+  background-color:   transparent;
+} 
+
+#announcements>ul>li>a {
+  background-color:   var(--announce);
+  border: 0;
+  border-left:        2px solid var(--announceborder);
+  border-bottom:      2px solid var(--announceborder);
+  border-radius: 0;
+  border-top-left-radius:     10px;
+  border-bottom-right-radius: 10px;
+}
+#announcements>ul>li>a:hover{
+  background-color: var(--announcehover);
+}
+#announcements>ul>li>a.borderless {
+  display:none!important;
+}
+
+#counters {
+  bottom: 85%;
+  background-color:   transparent!important;
+  border: 0;
+}
+.mq15 #counters {
+  height: 75px;
+  background-color:   var(--title)!important;
+}
+
+#counterlist>li {
+  border-left:        2px solid var(--title)!important;
+  border-right:       2px solid var(--title)!important;
+}
+
+#counters>#dailybonus{
+  margin-top: 0;
+  border-top: 0;
+}
+
+
+
+
+
+/*---------------🍓---------------*\
+  #STRAWBERI-PAGES
+\*---------------🍓---------------*/
+/*Miscellaneous code for fixing page issues.*/
+
+#profilelinks,
+#trainerimage,
+#shelter,
+#field_party,
+.party.wide>div,
+.showcase,
+.forumpost, 
+.tooltip_content,
+div[data-pid] {
+  background-color:   rgba(27, 22, 66, 0.9);
+}
+
+#sheltersuccess,
+#sheltercommands,
+.showcase>div[data-pid] {
+  background-color:   transparent!important;
+}
+
+#partybox {
+  border-bottom: 0!important;
+}
+
+.party.wide>div {
+  margin: 0px auto!important; padding: 3px;
+  box-shadow: none;
+}
+
+
+
+
+
+/*---------------🍓---------------*\
+  #CORE-MODULE
+\*---------------🍓---------------*/
+/**
+* Use this #CORE-MODULE instead of the one included in Strawberi.css.
+*
+* It makes the button nice and easy to see. 
+*
+* Using both #CORE-MODULEs will revert the colors!
+*/
+
+/*make room on the screen for the 🍓 Buttons*/
+#footbar {
+  display: none!important;
+}
+#content {
+  padding-bottom: 15vh;
+}
+
+/*create the 🍓 Buttons*/
+/*targets every single button on the site ⚠️*/
+button::before,
+#notifications a::before,
+[href='/user/~clickback']::before,
+a[data-flavour]::before, .fieldmon.cormyr::before,
+a[data-berry]::before, .action>a::before, .mu_navlink.next::before,
+a[data-fishspot]::before,
+.autoevo a::before,
+.tradelist a.view::before {
+  position: fixed;
+  height: 10vh; width: min(500px, 99vw); 
+  left: 50%; bottom: 0;
+  transform: translate(-50%);
+  font: normal normal normal 8vh/10vh "Trebuchet MS", sans-serif; 
+  text-align: center; font-decoration: none; 
+  background: radial-gradient(circle, #cd1767 0%, #1b1642 90%);
+  border: 2px solid #cd1767; border-radius: 10px 10px 0px 0px; 
+  z-index: 15;
+  cursor: pointer; user-select: none;
+}
