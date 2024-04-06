@@ -112,15 +112,15 @@ button#eggreload:enabled::before {
   z-index: 1!important;
 }
 
-.berrybuttons[data-down='any']>[data-berry='oran']::before,
-.berrybuttons[data-down='any']>[data-berry='aspear']::before,
-.berrybuttons[data-up='sour']>[data-berry='aspear']::before,
-.berrybuttons[data-up='spicy']>[data-berry='cheri']::before,
-.berrybuttons[data-up='dry']>[data-berry='chesto']::before,
-.berrybuttons[data-up='sweet']>[data-berry='pecha']::before,
-.berrybuttons[data-up='bitter']>[data-berry='rawst']::before,
+.berrybuttons[data-down='any'] a[data-berry='oran']::before,
+.berrybuttons[data-down='any'] a[data-berry='aspear']::before,
+.berrybuttons[data-up='sour'] a[data-berry='aspear']::before,
+.berrybuttons[data-up='spicy'] a[data-berry='cheri']::before,
+.berrybuttons[data-up='dry'] a[data-berry='chesto']::before,
+.berrybuttons[data-up='sweet'] a[data-berry='pecha']::before,
+.berrybuttons[data-up='bitter'] a[data-berry='rawst']::before,
 .action button::before,
-.action a::before {
+.action>a::before {
   content: '🍓';
 }
 
