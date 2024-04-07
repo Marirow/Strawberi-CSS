@@ -13,8 +13,9 @@
 /*create the 🍓 Buttons*/
 /*targets every single button on the site ⚠️*/
 button::before,
+.tooltip_trigger::before,
 #notifications a::before,
-[href='/user/~clickback']::before,
+[href="/user/~clickback"]::before,
 a[data-flavour]::before, .fieldmon.cormyr::before,
 a[data-berry]::before, .action>a::before, .mu_navlink.next::before,
 a[data-fishspot]::before,
@@ -43,7 +44,7 @@ a[data-fishspot]::before,
 
 /*------------#NOTIFICATION-MODULE*/
 #notifications a:last-of-type::before {
-  content: '🟢';
+  content: "🟢";
   /*Load above all other buttons.*/
   z-index: 20;
 }
@@ -53,10 +54,10 @@ a[data-fishspot]::before,
 .dialog {
   padding-bottom: 15vh;
 }
-.dialog button:first-of-type::before {
-  content: '🍓';
+.dialog button:first-of-type:not(:disabled)::before {
+  content: "🍓";
 }
-.dialog button[data-cancelbutton='1']::before,
+.dialog button[data-cancelbutton="1"]::before,
 .dialog button[data-field]::before {
   content: none!important;
 }
@@ -75,13 +76,13 @@ a[data-fishspot]::before,
 * Variants are generally the second/last Egg in the list.
 */
 #dcegglist button:last-of-type::before {
-  content: '🍓';
+  content: "🍓";
 }
 
 
 /*----------------#TRAINING-MODULE*/
 #collectall button::before {
-  content: '🍓';
+  content: "🍓";
 }
 
 
@@ -93,11 +94,11 @@ a[data-fishspot]::before,
 \*---------------🍓---------------*/
 
 button#eggreload:enabled::before {
-  content: '🔄';
+  content: "🔄";
 }
 
 #orusereloader button:not([disabled])::before {
-  content: '⏭️';
+  content: "⏭️";
 }
 
 
@@ -111,21 +112,21 @@ button#eggreload:enabled::before {
 
 .mu_navlink.next::before,
 .mu_navlink.next.qolGetMore::before {
-  content: '🍓';
+  content: "🍓";
   /*Load below all other buttons.*/
   z-index: 5;
 }
 
-.berrybuttons[data-down='any'] a[data-berry='oran']::before,
-.berrybuttons[data-down='any'] a[data-berry='aspear']::before,
-.berrybuttons[data-up='sour'] a[data-berry='aspear']::before,
-.berrybuttons[data-up='spicy'] a[data-berry='cheri']::before,
-.berrybuttons[data-up='dry'] a[data-berry='chesto']::before,
-.berrybuttons[data-up='sweet'] a[data-berry='pecha']::before,
-.berrybuttons[data-up='bitter'] a[data-berry='rawst']::before,
+.berrybuttons[data-down="any"] a[data-berry="oran"]::before,
+.berrybuttons[data-down="any"] a[data-berry="aspear"]::before,
+.berrybuttons[data-up="sour"] a[data-berry="aspear"]::before,
+.berrybuttons[data-up="spicy"] a[data-berry="cheri"]::before,
+.berrybuttons[data-up="dry"] a[data-berry="chesto"]::before,
+.berrybuttons[data-up="sweet"] a[data-berry="pecha"]::before,
+.berrybuttons[data-up="bitter"] a[data-berry="rawst"]::before,
 .action button::before,
 .action>a::before {
-  content: '🍓';
+  content: "🍓";
 }
 
 
@@ -136,34 +137,34 @@ button#eggreload:enabled::before {
   #FIELD-MODULE
 \*---------------🍓---------------*/
 
-/*make the Field 🍓 Button taller than the others for convenience*/
-.mq15 [href='/user/~clickback']::before,
-.mq15 #field_nav button[data-action='next']::before,
+/*Make the Field 🍓 Button taller than the others for convenience.*/
+.mq15 [href="/user/~clickback"]::before,
+.mq15 #field_nav button[data-action="next"]::before,
 .mq15 #field_berries a[data-berry]::before,
 .mq15 .fieldmon.cormyr::before {
   height: 35vh; line-height: 35vh;
 }
-.mq15 #content:has(#field_field[data-mode='public']) {
+.mq15 #content:has(#field_field[data-mode="public"]) {
   margin-bottom: 36vh;
 }
 
-#content:has(.fieldmon[data-flavour^='any']:not(.nothungry)) a[data-flavour='sour']::before,
-#content:has(.fieldmon[data-flavour^='sour']:not(.nothungry)) a[data-flavour='sour']::before,
-#content:has(.fieldmon[data-flavour^='spicy']:not(.nothungry)) a[data-flavour='spicy']::before,
-#content:has(.fieldmon[data-flavour^='dry']:not(.nothungry)) a[data-flavour='dry']::before,
-#content:has(.fieldmon[data-flavour^='sweet']:not(.nothungry)) a[data-flavour='sweet']::before,
-#content:has(.fieldmon[data-flavour^='bitter']:not(.nothungry)) a[data-flavour='bitter']::before,
+#content:has(.fieldmon[data-flavour^="any"]:not(.nothungry)) a[data-flavour="sour"]::before,
+#content:has(.fieldmon[data-flavour^="sour"]:not(.nothungry)) a[data-flavour="sour"]::before,
+#content:has(.fieldmon[data-flavour^="spicy"]:not(.nothungry)) a[data-flavour="spicy"]::before,
+#content:has(.fieldmon[data-flavour^="dry"]:not(.nothungry)) a[data-flavour="dry"]::before,
+#content:has(.fieldmon[data-flavour^="sweet"]:not(.nothungry)) a[data-flavour="sweet"]::before,
+#content:has(.fieldmon[data-flavour^="bitter"]:not(.nothungry)) a[data-flavour="bitter"]::before,
 #content:has(#field_berries.selected) .fieldmon.cormyr:not(.nothungry)::before,
-#content:has(#field_field[data-mode='public']):has([data-action='next'][disabled]) [href='/user/~clickback']::before,
-button[data-action='next']:not([disabled])::before, {
-  content: '🍓';
+#content:has(#field_field[data-mode="public"]):has([data-action="next"][disabled]) [href="/user/~clickback"]::before,
+button[data-action="next"]:not([disabled])::before, {
+  content: "🍓";
 }
 
 #content:has(.fieldmon.cormyr:not(.nothungry)) a[data-flavour]::before,
-#content:has(.fieldmon:not(.nothungry)) [href='/user/~clickback']::before,
-#content:has(.fieldmon:not(.nothungry)) button[data-action='next']::before,
-#content:has(#field_field[data-mode='private']) [href='/user/~clickback']::before,
-#content:has(#field_field[data-mode='private']) button[data-action='next']::before {
+#content:has(.fieldmon:not(.nothungry)) [href="/user/~clickback"]::before,
+#content:has(.fieldmon:not(.nothungry)) button[data-action="next"]::before,
+#content:has(#field_field[data-mode="private"]) [href="/user/~clickback"]::before,
+#content:has(#field_field[data-mode="private"]) button[data-action="next"]::before {
   content: none!important;
 }
 
@@ -188,22 +189,22 @@ button[data-action='next']:not([disabled])::before, {
 * Use one (1) of the following options.
 *
 * Reload without any flutes:
-* button[data-shelter='reload']:not([disabled])::before {
+* button[data-shelter="reload"]:not([disabled])::before {
 *
 * Reload using the white flute:
-* button[data-shelter='whiteflute']:not([disabled])::before {
+* button[data-shelter="whiteflute"]:not([disabled])::before {
 *
 * Reload using the black flute:
-* button[data-shelter='blackflute']:not([disabled])::before {
+* button[data-shelter="blackflute"]:not([disabled])::before {
 */
-button[data-shelter='reload']:not([disabled])::before {
-  content: '🔄';
+button[data-shelter="reload"]:not([disabled])::before {
+  content: "🔄";
   /*Load below all other buttons.*/
   z-index: 5;
 }
 
-button[data-shelter='adopt']::before {
-  content: '🍓';
+button[data-shelter="adopt"]::before {
+  content: "🍓";
 }
 
 
@@ -216,7 +217,7 @@ button[data-shelter='adopt']::before {
 /*Requires QOL to be enabled.*/
 
 .autoevo a::before {
-  content: '✨';
+  content: "✨";
 }
 
 #farmnews-evolutions>p>label>input:not(:checked) .autoevo>a::before {
@@ -231,10 +232,10 @@ button[data-shelter='adopt']::before {
 \*---------------🍓---------------*/
 
 button.br[data-collect]:not([disabled])::before {
-  content: '🍓';
+  content: "🍓";
 }
 button.br[data-upgrade]:not([disabled])::before {
-  content: '🍓';
+  content: "🍓";
   /*Load below all other buttons.*/
   z-index: 5;
 }
@@ -247,26 +248,26 @@ button.br[data-upgrade]:not([disabled])::before {
   #FISH-MODULE
 \*---------------🍓---------------*/
 
-a[data-fishspot='0']::before,
+a[data-fishspot="0"]::before,
 button[data-battleend]::before,
-button[data-battleact='ball-624']::before,
-button[data-battleact='ball-623']::before,
-button[data-battleact='ball-597']::before {
-  content: '🍓';
+button[data-battleact="ball-624"]::before,
+button[data-battleact="ball-623"]::before,
+button[data-battleact="ball-597"]::before {
+  content: "🍓";
 }
 
 #fishing>.panel>.center>p>button::before {
-  content: '🌊';
+  content: "🌊";
 }
 
 #fishing>.panel>.center>p>button.shake::before {
-  content: '🎣';
+  content: "🎣";
 }
 
 /*Throw the cheapest Fishing Ball first.*/
-#fishing:has([data-battleact="ball-597"]) button[data-battleact='ball-624']::before,
-#fishing:has([data-battleact="ball-597"]) button[data-battleact='ball-623']::before,
-#fishing:has([data-battleact="ball-623"]) button[data-battleact='ball-624']::before {
+#fishing:has([data-battleact="ball-597"]) button[data-battleact="ball-624"]::before,
+#fishing:has([data-battleact="ball-597"]) button[data-battleact="ball-623"]::before,
+#fishing:has([data-battleact="ball-623"]) button[data-battleact="ball-624"]::before {
   content: none!important;
 }
 
@@ -278,11 +279,17 @@ button[data-battleact='ball-597']::before {
   #TRADE-MODULE
 \*---------------🍓---------------*/
 
-.tradelist a.view::before {
-  content: '🍓';
+.tradelist a.view::before,
+.collectionlist .tooltip_trigger::before,
+.ttfield_commands button::before, {
+  content: "🍓";
 }
-button.big[data-action='acceptgift']::before {
-  content: '🤝';
+button.big[data-action="acceptgift"]::before {
+  content: "🤝";
+}
+/*Prevents the Dialog Module from abusing button priority.*/
+button[data-action="declinegift"]::before {
+  content: none!important;
 }
 
 
@@ -294,13 +301,13 @@ button.big[data-action='acceptgift']::before {
 \*---------------🍓---------------*/
 
 .boxlist button[data-open]:not([disabled])::before {
-  content: '🎁';
+  content: "🎁";
 }
 
-/*Don't accidentally open any boxes of a higher tier.*/
-.boxlist button[data-open='boxbox']::before,
-.boxlist button[data-open='boxboxbox']::before,
-.boxlist button[data-open='gragonbox']::before,
-.boxlist button[data-open='premiumbox2']::before {
+/*Do not accidentally open any boxes of a higher tier.*/
+.boxlist button[data-open="boxbox"]::before,
+.boxlist button[data-open="boxboxbox"]::before,
+.boxlist button[data-open="gragonbox"]::before,
+.boxlist button[data-open="premiumbox2"]::before {
   content: none!important;
 }
