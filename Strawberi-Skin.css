@@ -252,8 +252,8 @@ h1, p>a {
 }
 
 #counterlist>li {
-  border-left:        2px solid transparent!important;
-  border-right:       2px solid transparent!important;
+  border-left:        2px solid #d1f995!important;
+  border-right:       2px solid #d1f995!important;
 }
 
 #counters>#dailybonus{
