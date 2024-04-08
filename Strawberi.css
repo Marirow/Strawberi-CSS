@@ -8,6 +8,7 @@
 }
 #content {
   padding-bottom: 15vh;
+  box-shadow: none!important;
 }
 
 /*create the 🍓 Buttons*/
@@ -31,58 +32,6 @@ a[data-fishspot]::before,
   border: 2px solid #cc3e3e; border-radius: 10px 10px 0px 0px; 
   z-index: 15;
   cursor: pointer; user-select: none;
-}
-
-
-
-
-
-/*---------------🍓---------------*\
-  #EXTRA-MODULE
-\*---------------🍓---------------*/
-
-
-/*------------#NOTIFICATION-MODULE*/
-#notifications a:last-of-type::before {
-  content: "🟢";
-  /*Load above all other buttons.*/
-  z-index: 20;
-}
-
-
-/*------------------#DIALOG-MODULE*/
-.dialog {
-  padding-bottom: 15vh;
-}
-.dialog button:first-of-type:not(:disabled)::before {
-  content: "🍓";
-}
-.dialog button[data-cancelbutton="1"]::before,
-.dialog button[data-field]::before {
-  content: none!important;
-}
-
-
-/*-----------------#DAYCARE-MODULE*/
-/**
-* Use one (1) of the following options.
-*
-* Adopt the first Egg in the list:
-* #dcegglist button:first-of-type::before {
-*
-* Adopt the last Egg in the list:
-* #dcegglist button:last-of-type::before {
-*
-* Variants are generally the second/last Egg in the list.
-*/
-#dcegglist button:last-of-type::before {
-  content: "🍓";
-}
-
-
-/*----------------#TRAINING-MODULE*/
-#collectall button::before {
-  content: "🍓";
 }
 
 
@@ -248,6 +197,37 @@ button.br[data-upgrade]:not([disabled])::before {
   #FISH-MODULE
 \*---------------🍓---------------*/
 
+/**
+* We need to make room for three buttons here,
+* one for each action you can take while fishing.
+*
+* If they would overlap, the center button pops up.
+* We lock the other button's positions after this.
+*/
+.mq3 #content:has(#fishing) {
+  margin-bottom: 16vh;
+}
+
+button[data-battleact="ball-624"]::before,
+button[data-battleact="ball-623"]::before,
+button[data-battleact="ball-597"]::before {
+  height: 7vh;
+  z-index: 5;
+  line-height: 7vh; font-size: 6vh;
+}
+.mq3 button[data-battleact="ball-624"]::before,
+.mq3 button[data-battleact="ball-623"]::before,
+.mq3 button[data-battleact="ball-597"]::before {
+  height: 15vh;
+}
+
+button[data-battleact="bait"]::before,
+button[data-battleact="rock"]::before {
+  height: 7vh; width: min(225px, 49vw);
+  line-height: 7vh; font-size: 5vh;
+}
+
+/*Now, create the buttons as normal.*/
 a[data-fishspot="0"]::before,
 button[data-battleend]::before,
 button[data-battleact="ball-624"]::before,
@@ -256,10 +236,21 @@ button[data-battleact="ball-597"]::before {
   content: "🍓";
 }
 
+button[data-battleact="bait"]::before {
+  /*Lock to the left side of the screen.*/
+  left: 0%; transform: none;
+  content: "🪱";
+}
+
+button[data-battleact="rock"]::before {
+  /*Lock to the right side of the screen.*/
+  left: 100%; transform: translate(-100%);
+  content: "🪨";
+}
+
 #fishing>.panel>.center>p>button::before {
   content: "🌊";
 }
-
 #fishing>.panel>.center>p>button.shake::before {
   content: "🎣";
 }
@@ -310,4 +301,56 @@ button[data-action="declinegift"]::before {
 .boxlist button[data-open="gragonbox"]::before,
 .boxlist button[data-open="premiumbox2"]::before {
   content: none!important;
+}
+
+
+
+
+
+/*---------------🍓---------------*\
+  #EXTRA-MODULE
+\*---------------🍓---------------*/
+
+
+/*------------#NOTIFICATION-MODULE*/
+#notifications a:last-of-type::before {
+  content: "🟢";
+  /*Load above all other buttons.*/
+  z-index: 20;
+}
+
+
+/*------------------#DIALOG-MODULE*/
+.dialog {
+  padding-bottom: 15vh;
+}
+.dialog button:first-of-type:not(:disabled)::before {
+  content: "🍓";
+}
+.dialog button[data-cancelbutton="1"]::before,
+.dialog button[data-field]::before {
+  content: none!important;
+}
+
+
+/*-----------------#DAYCARE-MODULE*/
+/**
+* Use one (1) of the following options.
+*
+* Adopt the first Egg in the list:
+* #dcegglist button:first-of-type::before {
+*
+* Adopt the last Egg in the list:
+* #dcegglist button:last-of-type::before {
+*
+* Variants are generally the second/last Egg in the list.
+*/
+#dcegglist button:last-of-type::before {
+  content: "🍓";
+}
+
+
+/*----------------#TRAINING-MODULE*/
+#collectall button::before {
+  content: "🍓";
 }
