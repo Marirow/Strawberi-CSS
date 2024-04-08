@@ -317,6 +317,7 @@ div[data-pid] {
 }
 #content {
   padding-bottom: 15vh;
+  box-shadow: none!important;
 }
 
 /*create the 🍓 Buttons*/
