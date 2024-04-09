@@ -1,10 +1,10 @@
 # 🍓 PFQ-Strawberi: The Pokéfarm Q Accessibility Tool
 
 A series of accessibility stylesheets for Pokéfarm Q, designed around a universal 🍓 Button.
-- Want to click fast? Yes! Feed PKMN, go fishing, accept trades, and more with the click of a single button.
-- Aching hands? No worries! Strawberi gives your joints some time to rest by letting you tap and click without moving your wrist.
-- Custom theme? No problem! Styling the Core Module styles the 🍓 Button everywhere, making personalization a breeze.
-- *Compatible with PFQ as of 4/4/24. QOL script recommended. Tested on Firefox.*
+- Feed PKMN, go fishing, accept trades, and more with the click of a single button.
+- Give your joints some time to rest by tapping and clicking without moving your wrist.
+- Make Strawberi your own with customization options and a modular design.
+- *Only compatible with PFQ. QOL script recommended. Tested on Firefox.*
 
 Make farming easier; use Strawberi.
 
