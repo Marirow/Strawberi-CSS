@@ -11,7 +11,7 @@ Make farming easier; use Strawberi.
 ## 🍓 Instructions
 1. Access the Site Skins page at https://pokefarm.com/skin.
 2. Paste the contents of the release file(s) into the "Extra CSS" section of the Skin Editor.
-3. **OR** use the integrated site skin by pasting **JPM4/strawberi** into the "Other Skin" path.
+3. **OR** use the integrated Site Skins by pasting **JPM4/strawberi** or **JPM4/blackberi** into the "Other Skin" path.
 
 ## 🍓 Strawberi.css
 Contains every Strawberi module in a single package. Recommended to inject as-is.
