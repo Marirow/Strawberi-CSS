@@ -1,10 +1,9 @@
 /*---------------🍓---------------*\
-  #STRAWBERI-SKIN
+  #BLACKBERI-SKIN
 \*---------------🍓---------------*/
 
 /**
-* Background credit: Dietmar Rabich / Wikimedia Commons / “Dülmen, Kirchspiel, Erdbeerfeld -- 2015 -- 6492-6”
-* CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
+* Background credit: boodrian, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
 *
 * We use a lot of variables here, covering basically every color being used.
 * This makes it easier to edit colors on the fly, or customize the theme for yourself.
@@ -33,31 +32,31 @@ body {
   * var(--title) is the background, var(--titletext) is the header.
   * var(--bordercontent) would determine box-shadow color, but we turned that off.
   */
-  --background-image: url("https://pokefarm.com/upload/:JPM4/D_lmenKirchspielErdbeerfeld2015.jpg");
-  --global: #ff6363;
-  --content: #ecffcd;
-  --text: #2f2000;
-  --title: #d1f995;
-  --titletext: #2f2000;
-  --link: #bc0034;
-  --visitedlink: #cf6c00;
-  --activelink: #0093d7;
+  --background-image: url("https://pokefarm.com/upload/:JPM4/NightAtFalconridgeManorFarm.jpg");
+  --global: #cd1767;
+  --content: #29225c;
+  --text: #ffeaff;
+  --title: #1b1642;
+  --titletext: #ffeaff;
+  --link: #ffde45;
+  --visitedlink: #f37221;
+  --activelink: #854ef6;
 
   /*Extra CSS tab.*/
-  --borderglobal: #8e2626;
-  --bordertitle: #cc3e3e;
-  --bordercontent: #cc3e3e;
-  --liked: #7fff00;
-  --disliked: #af2727;
+  --borderglobal: #761d44;
+  --bordertitle: #8e2653;
+  --bordercontent: #8e2653;
+  --liked: #17e6ab;
+  --disliked: #7d183f;
 
   /*Custom variables from here on out.*/
-  --navbtns: #ff6363;
-  --navbtnsborder: #a71212;
-  --navbookmark: #ff7d63;
-  --navbookmarkborder: #a42911;
-  --announce: #ff9063;
-  --announceborder: #a23b11;
-  --announcehover: #ffb363;
+  --navbtns: #cd1767;
+  --navbtnsborder: #84033c;
+  --navbookmark: #cd1756;
+  --navbookmarkborder: #81032e;
+  --announce: #cd174c;
+  --announceborder: #790326;
+  --announcehover: #9a0a34;
 }
 
 * {
@@ -75,7 +74,7 @@ body {
 \*---------------🍓---------------*/
 
 #header {
-  background-color:    rgba(209, 249, 149, 0.9);
+  background-color:    rgba(27, 22, 66, 0.9);
   border-bottom:       1px solid var(--bordertitle);
 }
 .mq15 #header {
@@ -94,7 +93,7 @@ body {
 
 /*Gives page headers and links a background for visibility.*/
 h1, p>a {
-  background-color:    rgba(209, 249, 149, 0.9);
+  background-color:    rgba(27, 22, 66, 0.9);
   border-radius:       5px;
   text-decoration: none;
 }
@@ -105,7 +104,7 @@ h1, p>a {
 
 #navigation {
   margin-top: 0px; padding-top: 5px;
-  background-color:    rgba(209, 249, 149, 0.9);
+  background-color:    rgba(27, 22, 66, 0.9);
   border: 0;
 }
 .mq15 #navigation, {
@@ -211,7 +210,7 @@ h1, p>a {
 
 #announcements {
   padding: 4px 4px 0;
-  background-color:   rgba(209, 249, 149, 0.9);
+  background-color:   rgba(27, 22, 66, 0.9);
   border-bottom: 0;
   border-bottom-left-radius:  5px;
   border-bottom-right-radius: 5px;
@@ -252,8 +251,8 @@ h1, p>a {
 }
 
 #counterlist>li {
-  border-left:        2px solid #d1f995!important;
-  border-right:       2px solid #d1f995!important;
+  border-left:        2px solid var(--title)!important;
+  border-right:       2px solid var(--title)!important;
 }
 
 #counters>#dailybonus{
@@ -279,7 +278,7 @@ h1, p>a {
 .forumpost, 
 .tooltip_content,
 div[data-pid] {
-  background-color:   rgba(209, 249, 149, 0.9);
+  background-color:   rgba(27, 22, 66, 0.9);
 }
 
 #sheltersuccess,
@@ -301,3 +300,44 @@ div[data-pid] {
 
 
 
+/*---------------🍓---------------*\
+  #CORE-MODULE
+\*---------------🍓---------------*/
+/**
+* Use this #CORE-MODULE instead of the one included in Strawberi.css.
+*
+* It makes the button nice and easy to see. 
+*
+* Using both #CORE-MODULEs will revert the colors!
+*/
+
+/*make room on the screen for the 🍓 Buttons*/
+#footbar {
+  display: none!important;
+}
+#content {
+  padding-bottom: 15vh;
+  box-shadow: none!important;
+}
+
+/*create the 🍓 Buttons*/
+/*targets every single button on the site ⚠️*/
+button::before,
+#notifications a::before,
+[href='/user/~clickback']::before,
+a[data-flavour]::before, .fieldmon.cormyr::before,
+a[data-berry]::before, .action>a::before, .mu_navlink.next::before,
+a[data-fishspot]::before,
+.autoevo a::before,
+.tradelist a.view::before {
+  position: fixed;
+  height: 10vh; width: min(500px, 99vw); 
+  left: 50%; bottom: 0;
+  transform: translate(-50%);
+  font: normal normal normal 8vh/10vh "Trebuchet MS", sans-serif; 
+  text-align: center; font-decoration: none; 
+  background: radial-gradient(circle, #cd1767 0%, #1b1642 90%);
+  border: 2px solid #cd1767; border-radius: 10px 10px 0px 0px; 
+  z-index: 15;
+  cursor: pointer; user-select: none;
+}
