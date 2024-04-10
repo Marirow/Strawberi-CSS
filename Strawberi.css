@@ -313,6 +313,7 @@ button[data-action="declinegift"]::before {
 
 
 /*------------#NOTIFICATION-MODULE*/
+
 #notifications a:last-of-type::before {
   content: "🟢";
   /*Load above all other buttons.*/
@@ -321,9 +322,14 @@ button[data-action="declinegift"]::before {
 
 
 /*------------------#DIALOG-MODULE*/
+
 .dialog {
-  padding-bottom: 15vh;
+  padding-bottom: 30vh;
 }
+.dialog>div {
+  height: 50vh;
+}
+
 .dialog button:first-of-type:not(:disabled)::before {
   content: "🍓";
 }
@@ -345,12 +351,14 @@ button[data-action="declinegift"]::before {
 *
 * Variants are generally the second/last Egg in the list.
 */
+
 #dcegglist button:last-of-type::before {
   content: "🍓";
 }
 
 
 /*----------------#TRAINING-MODULE*/
+
 #collectall button::before {
   content: "🍓";
 }
