@@ -173,32 +173,17 @@ button[data-shelter="adopt"]::before {
 
 
 /*---------------🍓---------------*\
-  #EVOLVE-MODULE
-\*---------------🍓---------------*/
-/*Requires QOL to be enabled.*/
-
-.autoevo a::before {
-  content: "✨";
-}
-
-#farmnews-evolutions>p>label>input:not(:checked) .autoevo>a::before {
-  content: none!important;
-}
-
-
-
-
-/*---------------🍓---------------*\
   #WISH-MODULE
 \*---------------🍓---------------*/
 
-button.br[data-collect]:not([disabled])::before {
-  content: "🍓";
-}
 button.br[data-upgrade]:not([disabled])::before {
   content: "🍓";
   /*Load below all other buttons.*/
   z-index: 5;
+}
+
+button.br[data-collect]:not([disabled])::before {
+  content: "🍓";
 }
 
 
@@ -287,9 +272,11 @@ button[data-battleact="rock"]::before {
 .ttfield_commands button::before, {
   content: "🍓";
 }
+
 button.big[data-action="acceptgift"]::before {
   content: "🤝";
 }
+
 /*Prevents the Dialog Module from abusing button priority.*/
 button[data-action="declinegift"]::before {
   content: none!important;
@@ -352,6 +339,7 @@ button[data-action="declinegift"]::before {
 
 
 /*-----------------#DAYCARE-MODULE*/
+
 /**
 * Use one (1) of the following options.
 *
@@ -363,11 +351,15 @@ button[data-action="declinegift"]::before {
 *
 * Variants are generally the second/last Egg in the list.
 */
-
 #dcegglist button:last-of-type::before {
   content: "🍓";
 }
 
+/*------------------#EVOLVE-MODULE*/
+
+.autoevo a::before {
+  content: "✨";
+}
 
 /*----------------#TRAINING-MODULE*/
 
