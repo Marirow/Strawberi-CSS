@@ -2,7 +2,7 @@
   #CORE-MODULE
 \*---------------🍓---------------*/
 
-/*make room on the screen for the 🍓 Buttons*/
+/*Make room on the screen for the 🍓 Buttons.*/
 #footbar {
   display: none!important;
 }
@@ -11,8 +11,8 @@
   box-shadow: none!important;
 }
 
-/*create the 🍓 Buttons*/
-/*targets every single button on the site ⚠️*/
+/*Create the 🍓 Buttons.*/
+/*Targets every single button on the site! ⚠️*/
 button::before,
 .collectionlist .tooltip_trigger::before,
 #notifications a::before,
@@ -27,11 +27,23 @@ a[data-fishspot]::before,
   left: 50%; bottom: 0;
   transform: translate(-50%);
   font: normal normal normal 8vh/10vh "Trebuchet MS", sans-serif; 
-  text-align: center; font-decoration: none; 
-  background: radial-gradient(circle, #ecffcd 20%, #d1f995 100%);
-  border: 2px solid #cc3e3e; border-radius: 10px 10px 0px 0px; 
+  text-align: center; font-decoration: none;
+  border-radius: 10px 10px 0px 0px; 
   z-index: 15;
   cursor: pointer; user-select: none;
+  /**
+  * Strawberi Site Skin:
+  * background: radial-gradient(circle, #ecffcd 20%, #d1f995 100%);
+  * border: 2px solid #cc3e3e;
+  *
+  * Blackberi Site Skin:
+  * background: radial-gradient(circle, #cd1767 0%, #1b1642 90%);
+  * border: 2px solid #cd1767;
+  *
+  * You can also customize the colors yourself!
+  */
+  background: radial-gradient(circle, #ecffcd 20%, #d1f995 100%);
+  border: 2px solid #cc3e3e;
 }
 
 
