@@ -14,7 +14,7 @@
 /*create the 🍓 Buttons*/
 /*targets every single button on the site ⚠️*/
 button::before,
-.tooltip_trigger::before,
+.collectionlist .tooltip_trigger::before,
 #notifications a::before,
 [href="/user/~clickback"]::before,
 a[data-flavour]::before, .fieldmon.cormyr::before,
