@@ -173,6 +173,30 @@ button[data-shelter="adopt"]::before {
 
 
 /*---------------🍓---------------*\
+  #GARDEN-MODULE
+\*---------------🍓---------------*/
+
+button#waterall::before {
+  content: "💧";
+  /*Load below all other buttons.*/
+  z-index: 5;
+}
+
+button#plantberry:not([disabled])::before {
+  content: "🍓";
+  /*Load between the previous button and the next button.*/
+  z-index: 10;
+}
+
+button#plantsame:not([disabled])::before {
+  content: "🍓🍓🍓";
+}
+
+
+
+
+
+/*---------------🍓---------------*\
   #WISH-MODULE
 \*---------------🍓---------------*/
 
