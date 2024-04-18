@@ -183,13 +183,13 @@ button#waterall::before {
 }
 
 button#plantberry:not([disabled])::before {
-  content: "🍓";
+  content: "🌱";
   /*Load between the previous button and the next button.*/
   z-index: 10;
 }
 
 button#plantsame:not([disabled])::before {
-  content: "🍓🍓🍓";
+  content: "🌱🌱🌱";
 }
 
 
