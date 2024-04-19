@@ -39,10 +39,15 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 - Simplifies berry selecting, PKMN feeding, and field switching.
 - The last 🍓 Button of the last Field redirects to the clickback page (/user/~clickback).
 
-### 🍓Shelter Module
+### 🍓 Shelter Module
 - Allows the user to refresh the Shelter and view PKMN summaries without moving the mouse.
 - Makes it easier to check the Shelter for new Eggs or PKMN.
 - Simplifies selecting "View/Adopt" over and over.
+
+### 🍓 Garden Module
+- Allows the user to plant and water berries without moving the mouse.
+- Makes it easier to navigate the Garden interface without scrolling.
+- Simplifies planting the first berry, re-planting it, and watering the Garden.
 
 ### 🍓 Wish Module
 - Allows the user to upgrade and collected badges without moving the mouse.
@@ -86,9 +91,6 @@ A: It's a different implementation.
 - Strawberi cannot.
 
 Use whichever one works better for you.
-
-### Q: Will there be a Garden Module?
-A: No, due to CSS limitations. For a practical solution, see [Neonyan's Easy Garden Watering](https://pfq.link/~V9yD).
 
 ### Q: Are you worried about releasing this during the PFQ Recode?
 A: Not really. If the HTML changes, Strawberi will be updated accordingly.
