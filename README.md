@@ -49,12 +49,6 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 - Makes it easier to navigate the Garden interface without scrolling.
 - Simplifies planting the first berry, re-planting it, and watering the Garden.
 
-### 🍓 Evolve Module
-- (REQUIRES the QOL script's "easy evolve" function to be active).
-- Allows the user to "easy evolve" PKMN in the Farm News screen without moving the mouse.
-- Makes it easier to evolve many PKMN at once.
-- Simplifies clicking on each individual evolution link in the list.
-
 ### 🍓 Wish Module
 - Allows the user to upgrade and collected badges without moving the mouse.
 - Makes it easier to work through a lot of badges at a time.
@@ -80,6 +74,7 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 - Notification Module: Easily click on notification links.
 - Dialog Module: Easily close dialog prompts, like pressing Enter.
 - Daycare Module: Easily adopt the first or last Egg in your Daycare list.
+- Evolve Module: With the QOL script, easily evolve PKMN on the Farm News page.
 - Training Module: Easily collect training bags from your PKMN.
 
 ## Q&A
