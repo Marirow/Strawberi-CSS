@@ -356,6 +356,8 @@ button[data-action="declinegift"]::before {
 .dialog button:first-of-type:not(:disabled)::before {
   content: "🍓";
 }
+
+.dialog:has(#massreleaselist.bulkpokemonlist) button::before,
 .dialog button[data-cancelbutton="1"]::before,
 .dialog button[data-field]::before {
   content: none!important;
@@ -379,11 +381,13 @@ button[data-action="declinegift"]::before {
   content: "🍓";
 }
 
+
 /*------------------#EVOLVE-MODULE*/
 
 .autoevo a::before {
   content: "✨";
 }
+
 
 /*----------------#TRAINING-MODULE*/
 
