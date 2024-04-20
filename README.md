@@ -1,4 +1,4 @@
-# 🍓 PFQ-Strawberi: The Pokéfarm Q Accessibility Tool
+# 🍓 PFQ-Strawberi: A Pokéfarm Q Accessibility Tool
 
 A series of accessibility stylesheets for Pokéfarm Q.
 - Feed PKMN, go fishing, accept trades, and more with the click of a single button.
