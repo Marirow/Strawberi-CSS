@@ -79,6 +79,11 @@ Individual modules, listed below, can be disabled by removing the labeled CSS.
 
 ## Q&A
 
+### Q: Can Strawberi be used with Google Chrome? (Or Edge, or Opera, or any other Chromium browser?)
+A: Yes. However, you may run into visual glitches, especially with the Site Skins.
+
+If a visual glitch is preventing you from using the site normally, please create an issue on the Github's issue tracker. Thank you!
+
 ### Q: How does Strawberi's Field Module compare to [Winterbraid's One Click Fields](https://pfq.link/~Mzx6)?
 A: It's a different implementation.
 - OCF is developed for Chrome;
