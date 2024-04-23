@@ -2,13 +2,21 @@
   #CORE-MODULE
 \*---------------🍓---------------*/
 
+/*Get rid of the border at the bottom of the screen.*/
+#core,
+#content,
+.tabbed_interface div {
+  box-shadow: none!important;
+}
+
 /*Make room on the screen for the 🍓 Buttons.*/
 #footbar {
   display: none!important;
 }
-#content {
-  padding-bottom: 15vh;
-  box-shadow: none!important;
+#content::after {
+  position: absolute;
+  height: 15vh; width: 100%;
+  content: "";
 }
 
 /*Create the 🍓 Buttons.*/
@@ -105,8 +113,10 @@ button#eggreload:enabled::before {
 .mq15 .fieldmon.cormyr::before {
   height: 35vh; line-height: 35vh;
 }
-.mq15 #content:has(#field_field[data-mode="public"]) {
-  margin-bottom: 36vh;
+.mq15 #content:has(#field_field[data-mode="public"])::after {
+  position: absolute;
+  height: 36vh; width: 100%;
+  content: "";
 }
 
 #content:has(.fieldmon[data-flavour^="any"]:not(.nothungry)) a[data-flavour="sour"]::before,
@@ -359,7 +369,7 @@ button[data-action="declinegift"]::before {
 
 .dialog:has(#massreleaselist.bulkpokemonlist) button::before,
 .dialog button[data-cancelbutton="1"]::before,
-.dialog button[data-field]::before {
+.dialog button[data-field]:not([data-field="0"])::before {
   content: none!important;
 }
 
